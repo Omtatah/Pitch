@@ -1,0 +1,29 @@
+{% extends 'base.html'%}
+{% import 'bootstrap/wtf.html' as wtf%}
+{%  block content  %}
+
+<div class="container">
+
+
+    <div class='pitch' style="border:1px solid grey;border-left:3px solid black;padding:10px;border-radius:5px;">
+
+        <h4>{{pitch.category}}</h4>
+        <p>{{pitch.text}}</p><br>
+        {{pitch.posted_at}}
+    </div><br><br>
+
+    <h3>Comments</h3>
+    {% for comment in all_comments %}
+
+    <p style='border:1px solid grey;border-radius:4px;padding:10px;'>
+        ﹅ <strong>{{comment.pitch_comment}}</strong><br>posted at {{comment.posted}}
+    </p>
+
+    {%endfor%}
+    <br>
+
+    {{wtf.quick_form(comment_form)}}
+    <br>
+
+</div>
+{% endblock %}
