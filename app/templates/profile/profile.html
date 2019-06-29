@@ -1,0 +1,29 @@
+{% extends 'base.html'%}
+{% import 'bootstrap/wtf.html' as wtf%}
+{% block content %}
+
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <h3 style="color:white;background-color: black;padding:10px;border-radius: 5px;"> {{user.username}} </h3>
+            <hr>
+            {% for pitch in pitches %}
+
+            <div style="border:1px solid grey;border-radius:5px;padding:5px;margin:10px;border-top:3px solid black;">
+                <h3>{{pitch.category}}</h3>
+
+                <div>{{pitch.text[:32]}}</div>
+                <div> posted on : {{pitch.posted_at}}</div>
+
+
+
+            </div>
+            {% endfor %}
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
+{% endblock %}
