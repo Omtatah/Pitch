@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)https://www.shutterstock.com/blog/diy-photography-hacks -->
+<html class="js" lang="en-US" prefix="og: http://ogp.me/ns#"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><script id="www-widgetapi-script" src="./pit_files/www-widgetapi.js" async=""></script><script type="text/javascript" async="" defer="" src="./pit_files/s.js"></script><script type="text/javascript" async="" src="./pit_files/elqCfg.min.js"></script><script type="text/javascript" async="" src="./pit_files/5162.js"></script><script type="text/javascript" async="" src="./pit_files/f.txt"></script><script type="text/javascript" async="" src="./pit_files/insight.min.js"></script><script src="./pit_files/inferredEvents.js" async=""></script><script src="./pit_files/708380959260669" async=""></script><script async="" defer="" src="./pit_files/fbevents.js"></script><script type="text/javascript" async="" src="./pit_files/analytics.js"></script><script type="text/javascript" async="" src="./pit_files/ec.js"></script><script type="text/javascript" src="./pit_files/f3183ba577"></script><script type="text/javascript" async="" src="./pit_files/gtm.js"></script><script src="./pit_files/nr-1123.min.js"></script><script async="" id="script-analytics-js" type="text/javascript" src="./pit_files/analytics.min.js"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1123.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="https://www.shutterstock.com/blog/xmlrpc.php">
+	<title>Photographers Share DIY Photography Hacks You Need to Know</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v6.2 - https://yoa.st/1yg?utm_content=6.2 -->
+<meta name="description" content="Want to know what really goes on behind-the-scenes at a successful shoot? Explore these simple but unusual hacks from pro photographers.">
+<meta name="news_keywords" content="creative, photography">
+<meta name="original-source" content="https://www.shutterstock.com/blog/diy-photography-hacks">
+<link rel="canonical" href="https://www.shutterstock.com/blog/diy-photography-hacks">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Photographers Share DIY Photography Hacks You Need to Know">
+<meta property="og:description" content="Want to know what really goes on behind-the-scenes at a successful shoot? Explore these simple but unusual hacks from pro photographers.">
+<meta property="og:url" content="https://www.shutterstock.com/blog/diy-photography-hacks">
+<meta property="og:site_name" content="The Shutterstock Blog">
+<meta property="article:publisher" content="https://facebook.com/shutterstock">
+<meta property="article:section" content="Contributor">
+<meta property="article:published_time" content="2019-05-23T07:00:22-04:00">
+<meta property="article:modified_time" content="2019-05-22T15:53:12-04:00">
+<meta property="og:updated_time" content="2019-05-22T15:53:12-04:00">
+<meta property="og:image" content="https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2019/05/f2-7-1.jpg?w=1024">
+<meta property="og:image:secure_url" content="https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2019/05/f2-7-1.jpg?w=1024">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="640">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="Want to know what really goes on behind-the-scenes at a successful shoot? Explore these simple but unusual hacks from pro photographers.">
+<meta name="twitter:title" content="Photographers Share DIY Photography Hacks You Need to Know">
+<meta name="twitter:site" content="@Shutterstock">
+<meta name="twitter:image" content="https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2019/05/f2-7-1.jpg">
+<meta name="twitter:creator" content="@Shutterstock">
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":"https:\/\/www.shutterstock.com\/blog","name":"The Shutterstock Blog","potentialAction":{"@type":"SearchAction","target":"https:\/\/www.shutterstock.com\/blog?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Organization","url":"https:\/\/www.shutterstock.com\/blog","sameAs":["https:\/\/facebook.com\/shutterstock","https:\/\/instagram.com\/shutterstock","https:\/\/linkedin.com\/company\/shutterstock","https:\/\/www.youtube.com\/shutterstock","https:\/\/pinterest.com\/shutterstock","https:\/\/twitter.com\/Shutterstock"],"@id":"#organization","name":"Shutterstock","logo":""}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel="dns-prefetch" href="https://s0.wp.com/">
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="The Shutterstock Blog » Feed" href="https://www.shutterstock.com/blog/feed">
+<link rel="alternate" type="application/rss+xml" title="The Shutterstock Blog » Comments Feed" href="https://www.shutterstock.com/blog/comments/feed">
+<link rel="alternate" type="application/rss+xml" title="The Shutterstock Blog » Photographers Share DIY Photography Hacks You Need to Know Comments Feed" href="https://www.shutterstock.com/blog/diy-photography-hacks/feed">
+<link rel="stylesheet" id="all-css-0" href="./pit_files/saved_resource" type="text/css" media="all">
+<script type="text/javascript" src="./pit_files/jquery.js"></script>
+<script type="text/javascript" src="./pit_files/jquery-migrate.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var related_posts_js_options = {"post_heading":"h4"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./pit_files/related-posts.min.js"></script>
+<script type="text/javascript" src="./pit_files/gallery-links.js"></script>
+<script type="text/javascript" src="./pit_files/head.min.js"></script>
+<script type="text/javascript" src="./pit_files/gallery-links(1).js"></script>
+<link rel="https://api.w.org/" href="https://www.shutterstock.com/blog/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.shutterstock.com/blog/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.shutterstock.com/blog/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.2.1">
+<link rel="shortlink" href="https://shutr.bz/2Jao2HN">
+<link rel="alternate" type="application/json+oembed" href="https://www.shutterstock.com/blog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.shutterstock.com%2Fblog%2Fdiy-photography-hacks">
+<link rel="alternate" type="text/xml+oembed" href="https://www.shutterstock.com/blog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.shutterstock.com%2Fblog%2Fdiy-photography-hacks&amp;format=xml">
+<style type="text/css">img#wpstats{display:none}</style>	<style>
+		@font-face {
+			font-family: 'Frank';
+			src: url("https://www.shutterstock.com/blog/wp-content/themes/sstk-blog/assets/fonts/Frank-Light.eot");
+			src: url("https://www.shutterstock.com/blog/wp-content/themes/sstk-blog/assets/fonts/Frank-Light.eot?#iefix") format("embedded-opentype"), url("https://www.shutterstock.com/blog/wp-content/themes/sstk-blog/assets/fonts/Frank-Light.woff") format("woff"), url("https://www.shutterstock.com/blog/wp-content/themes/sstk-blog/assets/fonts/Frank-Light.ttf") format("truetype"), url("https://www.shutterstock.com/blog/wp-content/themes/sstk-blog/assets/fonts/Frank-Light.svg#Frank-Light") format("svg");
+			font-weight: 200;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: 'Frank';
+			src: url("https://www.shutterstock.com/blog/wp-content/themes/sstk-blog/assets/fonts/Frank-LightItalic.eot");
+			src: url("https://www.shutterstock.com/blog/wp-content/themes/sstk-blog/assets/fonts/Frank-LightItalic.eot?#iefix") format("embedded-opentype"), url("https://www.shutterstock.com/blog/wp-content/themes/sstk-blog/assets/fonts/Frank-LightItalic.woff") format("woff"), url("https://www.shutterstock.com/blog/wp-content/themes/sstk-blog/assets/fonts/Frank-LightItalic.ttf") format("truetype"), url("https://www.shutterstock.com/blog/wp-content/themes/sstk-blog/assets/fonts/Frank-LightItalic.svg#FrankLightItalic") format("svg");
+			font-weight: 200;
+			font-style: italic;
+		}
+
+		@font-face {
+			font-family: 'Frank';
+			src: url("https://www.shutterstock.com/blog/wp-content/themes/sstk-blog/assets/fonts/Frank-Regular.eot");
+			src: url("https://www.shutterstock.com/blog/wp-content/themes/sstk-blog/assets/fonts/Frank-Regular.eot?#iefix") format("embedded-opentype"), url("https://www.shutterstock.com/blog/wp-content/themes/sstk-blog/assets/fonts/Frank-Regular.woff") format("woff"), url("https://www.shutterstock.com/blog/wp-content/themes/sstk-blog/assets/fonts/Frank-Regular.ttf") format("truetype"), url("https://www.shutterstock.com/blog/wp-content/themes/sstk-blog/assets/fonts/Frank-Regular.svg#Frank-Regular") format("svg");
+			font-weight: 400;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: 'Frank';
+			src: url("https://www.shutterstock.com/blog/wp-content/themes/sstk-blog/assets/fonts/Frank-RegularItalic.eot");
+			src: url("https://www.shutterstock.com/blog/wp-content/themes/sstk-blog/assets/fonts/Frank-RegularItalic.eot?#iefix") format("embedded-opentype"), url("https://www.shutterstock.com/blog/wp-content/themes/sstk-blog/assets/fonts/Frank-RegularItalic.woff") format("woff"), url("https://www.shutterstock.com/blog/wp-content/themes/sstk-blog/assets/fonts/Frank-RegularItalic.ttf") format("truetype"), url("https://www.shutterstock.com/blog/wp-content/themes/sstk-blog/assets/fonts/Frank-RegularItalic.svg#Frank-RegularItalic") format("svg");
+			font-weight: 400;
+			font-style: italic;
+		}
+
+		@font-face {
+			font-family: 'Frank';
+			src: url("https://www.shutterstock.com/blog/wp-content/themes/sstk-blog/assets/fonts/Frank-Bold.eot");
+			src: url("https://www.shutterstock.com/blog/wp-content/themes/sstk-blog/assets/fonts/Frank-Bold.eot?#iefix") format("embedded-opentype"), url("https://www.shutterstock.com/blog/wp-content/themes/sstk-blog/assets/fonts/Frank-Bold.woff") format("woff"), url("https://www.shutterstock.com/blog/wp-content/themes/sstk-blog/assets/fonts/Frank-Bold.ttf") format("truetype"), url("https://www.shutterstock.com/blog/wp-content/themes/sstk-blog/assets/fonts/Frank-Bold.svg#Frank-Bold") format("svg");
+			font-weight: 700;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: 'Frank';
+			src: url("https://www.shutterstock.com/blog/wp-content/themes/sstk-blog/assets/fonts/Frank-BoldItalic.eot");
+			src: url("https://www.shutterstock.com/blog/wp-content/themes/sstk-blog/assets/fonts/Frank-BoldItalic.eot?#iefix") format("embedded-opentype"), url("https://www.shutterstock.com/blog/wp-content/themes/sstk-blog/assets/fonts/Frank-BoldItalic.woff") format("woff"), url("https://www.shutterstock.com/blog/wp-content/themes/sstk-blog/assets/fonts/Frank-BoldItalic.ttf") format("truetype"), url("https://www.shutterstock.com/blog/wp-content/themes/sstk-blog/assets/fonts/Frank-BoldItalic.svg#Frank-BoldItalic") format("svg");
+			font-weight: 700;
+			font-style: italic;
+		}
+
+		@font-face {
+			font-family: 'icomoon';
+			src: url("https://www.shutterstock.com/blog/wp-content/themes/sstk-blog/assets/fonts/icomoon.eot?rfgf0k");
+			src: url("https://www.shutterstock.com/blog/wp-content/themes/sstk-blog/assets/fonts/icomoon.eot?rfgf0k#iefix") format("embedded-opentype"), url("https://www.shutterstock.com/blog/wp-content/themes/sstk-blog/assets/fonts/icomoon.ttf?rfgf0k") format("truetype"), url("https://www.shutterstock.com/blog/wp-content/themes/sstk-blog/assets/fonts/icomoon.woff?rfgf0k") format("woff"), url("https://www.shutterstock.com/blog/wp-content/themes/sstk-blog/assets/fonts/icomoon.svg?rfgf0k#icomoon") format("svg");
+			font-weight: normal;
+			font-style: normal;
+		}
+
+		.sprite, .site__logo, .lang-map, .legal-truste {
+			background-image: url("https://www.shutterstock.com/blog/wp-content/themes/sstk-blog/assets/img/sprite_sstk.png");
+			background-repeat: no-repeat;
+		}
+	</style>
+		<style>
+		.mejs-controls .mejs-button > button {
+			background: transparent url("https://www.shutterstock.com/blog/wp-includes/js/mediaelement/mejs-controls.svg");
+		}
+	</style>
+		<style>
+		.page-header__swipe-icon {
+			background-image: url("https://www.shutterstock.com/blog/wp-content/themes/sstk-blog/assets/trends/2019/page-header-assets/swipe-arrow.svg");
+		}
+
+		/**
+		 * CTA images icon - white.
+		 */
+		.trend-item--zine-culture .cta--images::before,
+		.trend-item--80s-opulence .cta--images::before,
+		.trend-item--yesterdays-tomorrow .cta--images::before,
+		.trend-item--beyond-plastic .cta--images::before,
+		.trend-item--kawaii .cta--images::before,
+		.trend-item--kalamkari .cta--images::before,
+		.trend-item--rococo-romance .cta--images::before,
+		.trend-item--prism .cta--images::before,
+		.trend-item--hypnotic .cta--images::before,
+		.trend-item--everyday-futurism .cta--images::before,
+		.trend-item--tempting-typography .cta--images::before,
+		.trend-overlay__cta-images::before,
+		.map-footer__cta::before {
+			background-image: url("https://www.shutterstock.com/blog/wp-content/themes/sstk-blog/assets/trends/2019/icon-images-light.svg");
+		}
+
+		/**
+		 * CTA music icon - white.
+		 */
+		.trend-item--80s-opulence .cta--music::before,
+		.trend-item--yesterdays-tomorrow .cta--music::before,
+		.trend-item--rococo-romance .cta--music::before,
+		.trend-overlay__cta-music::before {
+			background-image: url("https://www.shutterstock.com/blog/wp-content/themes/sstk-blog/assets/trends/2019/icon-music-light.svg");
+		}
+
+		/**
+		 * CTA footage icon - white.
+		 */
+		.trend-item--80s-opulence .cta--footage::before,
+		.trend-item--yesterdays-tomorrow .cta--footage::before,
+		.trend-item--rococo-romance .cta--footage::before,
+		.trend-item--prism .cta--footage::before,
+		.trend-overlay__cta-footage::before {
+			background-image: url("https://www.shutterstock.com/blog/wp-content/themes/sstk-blog/assets/trends/2019/icon-footage-light.svg");
+		}
+
+		/**
+		 * CTA music icon - black.
+		 */
+		.trend-item--zine-culture .cta--music::before,
+		.trend-item--kawaii .cta--music::before {
+			background-image: url("https://www.shutterstock.com/blog/wp-content/themes/sstk-blog/assets/trends/2019/icon-music.svg");
+		}
+
+		/**
+		 * CTA footage icon - black.
+		 */
+		.trend-item--zine-culture .cta--footage::before,
+		.trend-item--everyday-futurism .cta--footage::before {
+			background-image: url("https://www.shutterstock.com/blog/wp-content/themes/sstk-blog/assets/trends/2019/icon-footage.svg");
+		}
+
+		/**
+		 * Large-screen icon changes.
+		 */
+		@media (min-width: 64rem) {
+			.trend-item--everyday-futurism .cta--footage::before {
+				background-image: url("https://www.shutterstock.com/blog/wp-content/themes/sstk-blog/assets/trends/2019/icon-footage-light.svg");
+			}
+			.trend-item--kawaii .cta--music::before {
+				background-image: url("https://www.shutterstock.com/blog/wp-content/themes/sstk-blog/assets/trends/2019/icon-music-light.svg");
+			}
+		}
+	</style>
+	<script id="analytics-data">
+	(function instantiateAnalyticsData() {
+		window.analyticsData = {
+			'page' : {
+				'applicationName': 'wordpress',
+				'environment': "production",
+				'site': 'blog',
+				'pageLanguage': "en-US",
+				'pageType': "post"			},
+		};
+	}());
+</script>
+<script id="analytics-init-segment">
+	(function initializeSegment() {
+		window.analytics.load({
+			integrations: {
+				'Google Tag Manager': {
+					containerId: 'GTM-PFWDHP'
+				},
+				'Shutterstock Data Platform': {
+					tagCollectorUrl: "https:\/\/sdp-tagcollector.shutterstock.com\/stcc1c8ff6d835f4ebe88bc1f751ca7e685\/stc.gif"				}
+			},
+			options: {
+				initialPageview: {
+					properties: window.analyticsData
+				},
+			},
+			url: 'https://www.shutterstock.com/blog/wp-content/themes/sstk-blog/assets/js/dist/analytics.min.js',
+		});
+	}());
+</script>
+
+<meta property="fb:app_id" content="258790121607">
+<meta property="fb:pages" content="599437893442496">
+<link rel="shortcut icon" href="https://www.shutterstock.com/blog/wp-content/themes/sstk-blog/assets/img/favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="https://www.shutterstock.com/blog/wp-content/themes/sstk-blog/assets/img/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://www.shutterstock.com/blog/wp-content/themes/sstk-blog/assets/img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://www.shutterstock.com/blog/wp-content/themes/sstk-blog/assets/img/apple-touch-icon-114x114.png">
+<link rel="amphtml" href="https://www.shutterstock.com/blog/diy-photography-hacks/amp"><style type="text/css">@-webkit-keyframes bounce{0%,20%,50%,80%,to{-webkit-transform:translateY(0);transform:translateY(0)}40%{-webkit-transform:translateY(-30px);transform:translateY(-30px)}60%{-webkit-transform:translateY(-15px);transform:translateY(-15px)}}@keyframes bounce{0%,20%,50%,80%,to{-webkit-transform:translateY(0);transform:translateY(0)}40%{-webkit-transform:translateY(-30px);transform:translateY(-30px)}60%{-webkit-transform:translateY(-15px);transform:translateY(-15px)}}.om-animation-bounce{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-name:bounce;animation-name:bounce}@-webkit-keyframes bounceIn{0%{opacity:0;-webkit-transform:scale(.3);transform:scale(.3)}50%{opacity:1;-webkit-transform:scale(1.05);transform:scale(1.05)}70%{-webkit-transform:scale(.9);transform:scale(.9)}to{opacity:1;-webkit-transform:scale(1);transform:scale(1)}}@keyframes bounceIn{0%{opacity:0;-webkit-transform:scale(.3);transform:scale(.3)}50%{opacity:1;-webkit-transform:scale(1.05);transform:scale(1.05)}70%{-webkit-transform:scale(.9);transform:scale(.9)}to{opacity:1;-webkit-transform:scale(1);transform:scale(1)}}.om-animation-bounce-in{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-name:bounceIn;animation-name:bounceIn}@-webkit-keyframes bounceInDown{0%{opacity:0;-webkit-transform:translateY(-2000px);transform:translateY(-2000px)}60%{opacity:1;-webkit-transform:translateY(30px);transform:translateY(30px)}80%{-webkit-transform:translateY(-10px);transform:translateY(-10px)}to{-webkit-transform:translateY(0);transform:translateY(0)}}@keyframes bounceInDown{0%{opacity:0;-webkit-transform:translateY(-2000px);transform:translateY(-2000px)}60%{opacity:1;-webkit-transform:translateY(30px);transform:translateY(30px)}80%{-webkit-transform:translateY(-10px);transform:translateY(-10px)}to{-webkit-transform:translateY(0);transform:translateY(0)}}.om-animation-bounce-in-down{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-name:bounceInDown;animation-name:bounceInDown}@-webkit-keyframes bounceInLeft{0%{opacity:0;-webkit-transform:translateX(-2000px);transform:translateX(-2000px)}60%{opacity:1;-webkit-transform:translateX(30px);transform:translateX(30px)}80%{-webkit-transform:translateX(-10px);transform:translateX(-10px)}to{-webkit-transform:translateX(0);transform:translateX(0)}}@keyframes bounceInLeft{0%{opacity:0;-webkit-transform:translateX(-2000px);transform:translateX(-2000px)}60%{opacity:1;-webkit-transform:translateX(30px);transform:translateX(30px)}80%{-webkit-transform:translateX(-10px);transform:translateX(-10px)}to{-webkit-transform:translateX(0);transform:translateX(0)}}.om-animation-bounce-in-left{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-name:bounceInLeft;animation-name:bounceInLeft}@-webkit-keyframes bounceInRight{0%{opacity:0;-webkit-transform:translateX(2000px);transform:translateX(2000px)}60%{opacity:1;-webkit-transform:translateX(-30px);transform:translateX(-30px)}80%{-webkit-transform:translateX(10px);transform:translateX(10px)}to{-webkit-transform:translateX(0);transform:translateX(0)}}@keyframes bounceInRight{0%{opacity:0;-webkit-transform:translateX(2000px);transform:translateX(2000px)}60%{opacity:1;-webkit-transform:translateX(-30px);transform:translateX(-30px)}80%{-webkit-transform:translateX(10px);transform:translateX(10px)}to{-webkit-transform:translateX(0);transform:translateX(0)}}.om-animation-bounce-in-right{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-name:bounceInRight;animation-name:bounceInRight}@-webkit-keyframes bounceInUp{0%{opacity:0;-webkit-transform:translateY(2000px);transform:translateY(2000px)}60%{opacity:1;-webkit-transform:translateY(-30px);transform:translateY(-30px)}80%{-webkit-transform:translateY(10px);transform:translateY(10px)}to{-webkit-transform:translateY(0);transform:translateY(0)}}@keyframes bounceInUp{0%{opacity:0;-webkit-transform:translateY(2000px);transform:translateY(2000px)}60%{opacity:1;-webkit-transform:translateY(-30px);transform:translateY(-30px)}80%{-webkit-transform:translateY(10px);transform:translateY(10px)}to{-webkit-transform:translateY(0);transform:translateY(0)}}.om-animation-bounce-in-up{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-name:bounceInUp;animation-name:bounceInUp}@-webkit-keyframes flash{0%,50%,to{opacity:1}25%,75%{opacity:0}}@keyframes flash{0%,50%,to{opacity:1}25%,75%{opacity:0}}.om-animation-flash{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-name:flash;animation-name:flash}@-webkit-keyframes flip{0%{-webkit-transform:perspective(800px) translateZ(0) rotateY(0) scale(1);transform:perspective(800px) translateZ(0) rotateY(0) scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}40%{-webkit-transform:perspective(800px) translateZ(150px) rotateY(170deg) scale(1);transform:perspective(800px) translateZ(150px) rotateY(170deg) scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}50%{-webkit-transform:perspective(800px) translateZ(150px) rotateY(190deg) scale(1);transform:perspective(800px) translateZ(150px) rotateY(190deg) scale(1);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}80%{-webkit-transform:perspective(800px) translateZ(0) rotateY(1turn) scale(.95);transform:perspective(800px) translateZ(0) rotateY(1turn) scale(.95);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}to{-webkit-transform:perspective(800px) translateZ(0) rotateY(1turn) scale(1);transform:perspective(800px) translateZ(0) rotateY(1turn) scale(1);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}}@keyframes flip{0%{-webkit-transform:perspective(800px) translateZ(0) rotateY(0) scale(1);transform:perspective(800px) translateZ(0) rotateY(0) scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}40%{-webkit-transform:perspective(800px) translateZ(150px) rotateY(170deg) scale(1);transform:perspective(800px) translateZ(150px) rotateY(170deg) scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}50%{-webkit-transform:perspective(800px) translateZ(150px) rotateY(190deg) scale(1);transform:perspective(800px) translateZ(150px) rotateY(190deg) scale(1);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}80%{-webkit-transform:perspective(800px) translateZ(0) rotateY(1turn) scale(.95);transform:perspective(800px) translateZ(0) rotateY(1turn) scale(.95);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}to{-webkit-transform:perspective(800px) translateZ(0) rotateY(1turn) scale(1);transform:perspective(800px) translateZ(0) rotateY(1turn) scale(1);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}}.om-animation-flip{-webkit-animation-duration:1s;animation-duration:1s;-webkit-backface-visibility:visible;backface-visibility:visible;-webkit-animation-name:flip;animation-name:flip}@-webkit-keyframes flipInX{0%{-webkit-transform:perspective(800px) rotateX(90deg);transform:perspective(800px) rotateX(90deg);opacity:0}40%{-webkit-transform:perspective(800px) rotateX(-10deg);transform:perspective(800px) rotateX(-10deg)}70%{-webkit-transform:perspective(800px) rotateX(10deg);transform:perspective(800px) rotateX(10deg)}to{-webkit-transform:perspective(800px) rotateX(0deg);transform:perspective(800px) rotateX(0deg);opacity:1}}@keyframes flipInX{0%{-webkit-transform:perspective(800px) rotateX(90deg);transform:perspective(800px) rotateX(90deg);opacity:0}40%{-webkit-transform:perspective(800px) rotateX(-10deg);transform:perspective(800px) rotateX(-10deg)}70%{-webkit-transform:perspective(800px) rotateX(10deg);transform:perspective(800px) rotateX(10deg)}to{-webkit-transform:perspective(800px) rotateX(0deg);transform:perspective(800px) rotateX(0deg);opacity:1}}.om-animation-flip-down{-webkit-animation-duration:1s;animation-duration:1s;-webkit-backface-visibility:visible;backface-visibility:visible;-webkit-animation-name:flipInX;animation-name:flipInX}@-webkit-keyframes flipInY{0%{-webkit-transform:perspective(800px) rotateY(90deg);transform:perspective(800px) rotateY(90deg);opacity:0}40%{-webkit-transform:perspective(800px) rotateY(-10deg);transform:perspective(800px) rotateY(-10deg)}70%{-webkit-transform:perspective(800px) rotateY(10deg);transform:perspective(800px) rotateY(10deg)}to{-webkit-transform:perspective(800px) rotateY(0deg);transform:perspective(800px) rotateY(0deg);opacity:1}}@keyframes flipInY{0%{-webkit-transform:perspective(800px) rotateY(90deg);transform:perspective(800px) rotateY(90deg);opacity:0}40%{-webkit-transform:perspective(800px) rotateY(-10deg);transform:perspective(800px) rotateY(-10deg)}70%{-webkit-transform:perspective(800px) rotateY(10deg);transform:perspective(800px) rotateY(10deg)}to{-webkit-transform:perspective(800px) rotateY(0deg);transform:perspective(800px) rotateY(0deg);opacity:1}}.om-animation-flip-side{-webkit-animation-duration:1s;animation-duration:1s;-webkit-backface-visibility:visible;backface-visibility:visible;-webkit-animation-name:flipInY;animation-name:flipInY}@-webkit-keyframes lightSpeedIn{0%{-webkit-transform:translateX(100%) skewX(-30deg);transform:translateX(100%) skewX(-30deg);opacity:0}60%{-webkit-transform:translateX(-20%) skewX(30deg);transform:translateX(-20%) skewX(30deg);opacity:1}80%{-webkit-transform:translateX(0) skewX(-15deg);transform:translateX(0) skewX(-15deg);opacity:1}to{-webkit-transform:translateX(0) skewX(0deg);transform:translateX(0) skewX(0deg);opacity:1}}@keyframes lightSpeedIn{0%{-webkit-transform:translateX(100%) skewX(-30deg);transform:translateX(100%) skewX(-30deg);opacity:0}60%{-webkit-transform:translateX(-20%) skewX(30deg);transform:translateX(-20%) skewX(30deg);opacity:1}80%{-webkit-transform:translateX(0) skewX(-15deg);transform:translateX(0) skewX(-15deg);opacity:1}to{-webkit-transform:translateX(0) skewX(0deg);transform:translateX(0) skewX(0deg);opacity:1}}.om-animation-light-speed{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-name:lightSpeedIn;animation-name:lightSpeedIn;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}@-webkit-keyframes pulse{0%{-webkit-transform:scale(1);transform:scale(1)}50%{-webkit-transform:scale(1.1);transform:scale(1.1)}to{-webkit-transform:scale(1);transform:scale(1)}}@keyframes pulse{0%{-webkit-transform:scale(1);transform:scale(1)}50%{-webkit-transform:scale(1.1);transform:scale(1.1)}to{-webkit-transform:scale(1);transform:scale(1)}}.om-animation-pulse{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-name:pulse;animation-name:pulse}@-webkit-keyframes rollIn{0%{opacity:0;-webkit-transform:translateX(-100%) rotate(-120deg);transform:translateX(-100%) rotate(-120deg)}to{opacity:1;-webkit-transform:translateX(0) rotate(0deg);transform:translateX(0) rotate(0deg)}}@keyframes rollIn{0%{opacity:0;-webkit-transform:translateX(-100%) rotate(-120deg);transform:translateX(-100%) rotate(-120deg)}to{opacity:1;-webkit-transform:translateX(0) rotate(0deg);transform:translateX(0) rotate(0deg)}}.om-animation-roll-in{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-name:rollIn;animation-name:rollIn}@-webkit-keyframes rotateIn{0%{-webkit-transform-origin:center center;transform-origin:center center;-webkit-transform:rotate(-200deg);transform:rotate(-200deg);opacity:0}to{-webkit-transform-origin:center center;transform-origin:center center;-webkit-transform:rotate(0);transform:rotate(0);opacity:1}}@keyframes rotateIn{0%{-webkit-transform-origin:center center;transform-origin:center center;-webkit-transform:rotate(-200deg);transform:rotate(-200deg);opacity:0}to{-webkit-transform-origin:center center;transform-origin:center center;-webkit-transform:rotate(0);transform:rotate(0);opacity:1}}.om-animation-rotate{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-name:rotateIn;animation-name:rotateIn}@-webkit-keyframes rotateInDownLeft{0%{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate(-90deg);transform:rotate(-90deg);opacity:0}to{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate(0);transform:rotate(0);opacity:1}}@keyframes rotateInDownLeft{0%{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate(-90deg);transform:rotate(-90deg);opacity:0}to{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate(0);transform:rotate(0);opacity:1}}.om-animation-rotate-down-left{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-name:rotateInDownLeft;animation-name:rotateInDownLeft}@-webkit-keyframes rotateInDownRight{0%{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate(90deg);transform:rotate(90deg);opacity:0}to{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate(0);transform:rotate(0);opacity:1}}@keyframes rotateInDownRight{0%{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate(90deg);transform:rotate(90deg);opacity:0}to{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate(0);transform:rotate(0);opacity:1}}.om-animation-rotate-down-right{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-name:rotateInDownRight;animation-name:rotateInDownRight}@-webkit-keyframes rotateInUpLeft{0%{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate(90deg);transform:rotate(90deg);opacity:0}to{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate(0);transform:rotate(0);opacity:1}}@keyframes rotateInUpLeft{0%{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate(90deg);transform:rotate(90deg);opacity:0}to{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate(0);transform:rotate(0);opacity:1}}.om-animation-rotate-up-left{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-name:rotateInUpLeft;animation-name:rotateInUpLeft}@-webkit-keyframes rotateInUpRight{0%{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate(-90deg);transform:rotate(-90deg);opacity:0}to{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate(0);transform:rotate(0);opacity:1}}@keyframes rotateInUpRight{0%{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate(-90deg);transform:rotate(-90deg);opacity:0}to{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate(0);transform:rotate(0);opacity:1}}.om-animation-rotate-up-right{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-name:rotateInUpRight;animation-name:rotateInUpRight}@-webkit-keyframes rubberBand{0%{-webkit-transform:scale(1);transform:scale(1)}30%{-webkit-transform:scaleX(1.25) scaleY(.75);transform:scaleX(1.25) scaleY(.75)}40%{-webkit-transform:scaleX(.75) scaleY(1.25);transform:scaleX(.75) scaleY(1.25)}60%{-webkit-transform:scaleX(1.15) scaleY(.85);transform:scaleX(1.15) scaleY(.85)}to{-webkit-transform:scale(1);transform:scale(1)}}@keyframes rubberBand{0%{-webkit-transform:scale(1);transform:scale(1)}30%{-webkit-transform:scaleX(1.25) scaleY(.75);transform:scaleX(1.25) scaleY(.75)}40%{-webkit-transform:scaleX(.75) scaleY(1.25);transform:scaleX(.75) scaleY(1.25)}60%{-webkit-transform:scaleX(1.15) scaleY(.85);transform:scaleX(1.15) scaleY(.85)}to{-webkit-transform:scale(1);transform:scale(1)}}.om-animation-rubber-band{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-name:rubberBand;animation-name:rubberBand}@-webkit-keyframes shake{0%,to{-webkit-transform:translateX(0);transform:translateX(0)}10%,30%,50%,70%,90%{-webkit-transform:translateX(-10px);transform:translateX(-10px)}20%,40%,60%,80%{-webkit-transform:translateX(10px);transform:translateX(10px)}}@keyframes shake{0%,to{-webkit-transform:translateX(0);transform:translateX(0)}10%,30%,50%,70%,90%{-webkit-transform:translateX(-10px);transform:translateX(-10px)}20%,40%,60%,80%{-webkit-transform:translateX(10px);transform:translateX(10px)}}.om-animation-shake{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-name:shake;animation-name:shake}@-webkit-keyframes slideInDown{0%{opacity:0;-webkit-transform:translateY(-2000px);transform:translateY(-2000px)}to{-webkit-transform:translateY(0);transform:translateY(0)}}@keyframes slideInDown{0%{opacity:0;-webkit-transform:translateY(-2000px);transform:translateY(-2000px)}to{-webkit-transform:translateY(0);transform:translateY(0)}}.om-animation-slide-in-down{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-name:slideInDown;animation-name:slideInDown}@-webkit-keyframes slideInLeft{0%{opacity:0;-webkit-transform:translateX(-2000px);transform:translateX(-2000px)}to{-webkit-transform:translateX(0);transform:translateX(0)}}@keyframes slideInLeft{0%{opacity:0;-webkit-transform:translateX(-2000px);transform:translateX(-2000px)}to{-webkit-transform:translateX(0);transform:translateX(0)}}.om-animation-slide-in-left{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-name:slideInLeft;animation-name:slideInLeft}@-webkit-keyframes slideInRight{0%{opacity:0;-webkit-transform:translateX(2000px);transform:translateX(2000px)}to{-webkit-transform:translateX(0);transform:translateX(0)}}@keyframes slideInRight{0%{opacity:0;-webkit-transform:translateX(2000px);transform:translateX(2000px)}to{-webkit-transform:translateX(0);transform:translateX(0)}}.om-animation-slide-in-right{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-name:slideInRight;animation-name:slideInRight}@-webkit-keyframes swing{20%{-webkit-transform:rotate(15deg);transform:rotate(15deg)}40%{-webkit-transform:rotate(-10deg);transform:rotate(-10deg)}60%{-webkit-transform:rotate(5deg);transform:rotate(5deg)}80%{-webkit-transform:rotate(-5deg);transform:rotate(-5deg)}to{-webkit-transform:rotate(0deg);transform:rotate(0deg)}}@keyframes swing{20%{-webkit-transform:rotate(15deg);transform:rotate(15deg)}40%{-webkit-transform:rotate(-10deg);transform:rotate(-10deg)}60%{-webkit-transform:rotate(5deg);transform:rotate(5deg)}80%{-webkit-transform:rotate(-5deg);transform:rotate(-5deg)}to{-webkit-transform:rotate(0deg);transform:rotate(0deg)}}.om-animation-swing{-webkit-animation-duration:1s;animation-duration:1s;-webkit-transform-origin:top center;transform-origin:top center;-webkit-animation-name:swing;animation-name:swing}@-webkit-keyframes tada{0%{-webkit-transform:scale(1);transform:scale(1)}10%,20%{-webkit-transform:scale(.9) rotate(-3deg);transform:scale(.9) rotate(-3deg)}30%,50%,70%,90%{-webkit-transform:scale(1.1) rotate(3deg);transform:scale(1.1) rotate(3deg)}40%,60%,80%{-webkit-transform:scale(1.1) rotate(-3deg);transform:scale(1.1) rotate(-3deg)}to{-webkit-transform:scale(1) rotate(0);transform:scale(1) rotate(0)}}@keyframes tada{0%{-webkit-transform:scale(1);transform:scale(1)}10%,20%{-webkit-transform:scale(.9) rotate(-3deg);transform:scale(.9) rotate(-3deg)}30%,50%,70%,90%{-webkit-transform:scale(1.1) rotate(3deg);transform:scale(1.1) rotate(3deg)}40%,60%,80%{-webkit-transform:scale(1.1) rotate(-3deg);transform:scale(1.1) rotate(-3deg)}to{-webkit-transform:scale(1) rotate(0);transform:scale(1) rotate(0)}}.om-animation-tada{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-name:tada;animation-name:tada}@-webkit-keyframes wobble{0%{-webkit-transform:translateX(0);transform:translateX(0)}15%{-webkit-transform:translateX(-25%) rotate(-5deg);transform:translateX(-25%) rotate(-5deg)}30%{-webkit-transform:translateX(20%) rotate(3deg);transform:translateX(20%) rotate(3deg)}45%{-webkit-transform:translateX(-15%) rotate(-3deg);transform:translateX(-15%) rotate(-3deg)}60%{-webkit-transform:translateX(10%) rotate(2deg);transform:translateX(10%) rotate(2deg)}75%{-webkit-transform:translateX(-5%) rotate(-1deg);transform:translateX(-5%) rotate(-1deg)}to{-webkit-transform:translateX(0);transform:translateX(0)}}@keyframes wobble{0%{-webkit-transform:translateX(0);transform:translateX(0)}15%{-webkit-transform:translateX(-25%) rotate(-5deg);transform:translateX(-25%) rotate(-5deg)}30%{-webkit-transform:translateX(20%) rotate(3deg);transform:translateX(20%) rotate(3deg)}45%{-webkit-transform:translateX(-15%) rotate(-3deg);transform:translateX(-15%) rotate(-3deg)}60%{-webkit-transform:translateX(10%) rotate(2deg);transform:translateX(10%) rotate(2deg)}75%{-webkit-transform:translateX(-5%) rotate(-1deg);transform:translateX(-5%) rotate(-1deg)}to{-webkit-transform:translateX(0);transform:translateX(0)}}.om-animation-wobble{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-name:wobble;animation-name:wobble}.om-content-lock{color:transparent!important;text-shadow:rgba(0,0,0,.5) 0 0 10px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;pointer-events:none;filter:url("data:image/svg+xml;utf9,<svg%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'><filter%20id='blur'><feGaussianBlur%20stdDeviation='10'%20/></filter></svg>#blur");-webkit-filter:blur(10px);-ms-filter:blur(10px);-o-filter:blur(10px);filter:blur(10px)}html.om-mobile-position,html.om-mobile-position body{position:fixed!important}html.om-ios-form,html.om-ios-form body{-webkit-transform:translateZ(0)!important;transform:translateZ(0)!important;-webkit-overflow-scrolling:touch!important;height:100%!important;overflow:auto!important}html.om-position-popup body{overflow:hidden!important}html.om-position-floating-top{transition:padding-top .5s ease!important}html.om-position-floating-bottom{transition:padding-bottom .5s ease!important}html.om-reset-dimensions{height:100%!important;width:100%!important}</style><style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style><script src="./pit_files/legacy-api.min.js" async=""></script><script src="./pit_files/webfont.js" async=""></script><script src="./pit_files/analytics.js" async=""></script><script src="./pit_files/f(1).txt"></script></head>
+
+<body class="post-template-default single single-post postid-100162 single-format-standard" data-page-type="post" data-site="blog">
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W4GRKX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+	<div id="page" class="hfeed site">
+
+		<header class="site-header masthead">
+
+			<div class="navbar navbar--shutterstock">
+
+				<ul id="menu-shutterstock" class="menu menu--shutterstock"><li id="menu-item-58641" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-58641"><a href="https://www.shutterstock.com/">Images</a>
+<ul class="sub-menu">
+	<li id="menu-item-58644" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-58644"><a href="https://www.shutterstock.com/photos">Photos</a></li>
+	<li id="menu-item-58645" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-58645"><a href="https://www.shutterstock.com/vectors">Vectors</a></li>
+</ul>
+</li>
+<li id="menu-item-58642" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-58642"><a href="https://www.shutterstock.com/video">Footage</a></li>
+<li id="menu-item-58643" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-58643"><a href="https://www.shutterstock.com/music">Music</a></li>
+<li id="menu-item-58649" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-58649"><a href="https://www.shutterstock.com/editorial">Editorial</a>
+<ul class="sub-menu">
+	<li id="menu-item-58652" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-58652"><a href="https://www.shutterstock.com/editorial/entertainment">Entertainment</a></li>
+	<li id="menu-item-58653" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-58653"><a href="https://www.shutterstock.com/editorial/news">News</a></li>
+	<li id="menu-item-58654" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-58654"><a href="https://www.shutterstock.com/editorial/sports">Sports</a></li>
+	<li id="menu-item-58655" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-58655"><a href="https://www.shutterstock.com/editorial/royalty">Royalty</a></li>
+</ul>
+</li>
+<li id="menu-item-58640" class="menu-item--blog menu-item menu-item-type-custom menu-item-object-custom menu-item-58640"><a href="https://www.shutterstock.com/blog/">Blog</a></li>
+<li id="menu-item-58647" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-58647"><a href="https://www.shutterstock.com/editor">Tools</a>
+<ul class="sub-menu">
+	<li id="menu-item-58656" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-58656"><a href="https://www.shutterstock.com/editor">Editor</a></li>
+	<li id="menu-item-96236" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-96236"><a href="https://www.shutterstock.com/file-converter">File Converter</a></li>
+	<li id="menu-item-96235" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-96235"><a href="https://www.shutterstock.com/image-resizer">Image Resizer</a></li>
+	<li id="menu-item-93184" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-93184"><a href="https://www.shutterstock.com/explore/collage-maker">Collage Maker</a></li>
+	<li id="menu-item-96237" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-96237"><a href="https://www.shutterstock.com/colors">Color Schemes</a></li>
+	<li id="menu-item-93185" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-93185"><a href="https://www.shutterstock.com/lp/powerpoint-presentation-images-plugin">Microsoft Office Plugin</a></li>
+	<li id="menu-item-93186" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-93186"><a href="https://www.shutterstock.com/lp/adobe-plugin-shutterstock">Creative Cloud Plugins</a></li>
+</ul>
+</li>
+</ul>
+				<ul class="menu navbar__menu menu--contact">
+						<li class="menu-item menu-item--phone">
+							<a href="tel:+1-866-663-3954" class="menu__link--phone">1-866-663-3954</a>
+						</li>
+				</ul>
+
+				<ul class="menu menu--languages navbar__menu">
+					<li class="menu-item menu-item-has-children menu-item--current-language"><a href="javascript:void(0);" class="menu--languages__toggle">English<span class="icon icon--triangle-down"></span> </a>
+						<ul class="sub-menu">
+<li class="menu-item menu-item-blog-3"><a href="https://www.shutterstock.com/de/blog/">Deutsch</a></li>
+<li class="menu-item menu-item-blog-5 current-menu-item"><a href="https://www.shutterstock.com/blog/">English</a></li>
+<li class="menu-item menu-item-blog-2"><a href="https://www.shutterstock.com/fr/blog/">Français</a></li>
+<li class="menu-item menu-item-blog-4"><a href="https://www.shutterstock.com/pt/blog/">Português</a></li>
+<li class="menu-item menu-item-blog-16"><a href="https://www.shutterstock.com/th/blog/">ไทย</a></li>
+<li class="menu-item menu-item-blog-17"><a href="https://www.shutterstock.com/ko/blog/">한국어</a></li>
+<li class="menu-item menu-item-blog-6"><a href="https://www.shutterstock.com/ja/blog/">日本語</a></li>
+<li class="menu-item menu-item-blog-11"><a href="https://www.shutterstock.com/zh-Hant/blog/">繁體中文</a></li>
+</ul>
+					</li>
+				</ul>
+
+				<ul id="menu-visit-shutterstock" class="menu menu--visit menu--visit-desktop"><li id="menu-item-59558" class="menu-item--offset menu-item menu-item-type-custom menu-item-object-custom menu-item-59558"><a href="https://www.offset.com/?utm_source=shutterstock.com&amp;utm_medium=referral&amp;utm_content=exploreoffset&amp;utm_campaign=lo_hdr" target="_blank">Discover Offset.com</a></li>
+<li id="menu-item-59559" class="menu-item--subscribe menu-item menu-item-type-custom menu-item-object-custom menu-item-59559"><a href="https://www.shutterstock.com/subscribe">See Plans &amp; Pricing</a></li>
+</ul>
+			</div>
+			<div class="navbar navbar--site">
+								<div class="navbar__inner navbar--site__inner">
+
+					<div class="navbar--site__sm">
+
+						<div class="site-title"><a href="https://www.shutterstock.com/blog/" rel="home" class="site__logo">The Shutterstock Blog</a></div>
+						<div class="navbar--site__toggles">
+							<form role="search" method="get" class="search-form" action="https://www.shutterstock.com/blog/">
+	<input type="search" class="search-field" placeholder="Search our blog…" value="" name="s" title="Search for:">
+	<button type="submit" class="search-submit"><span class="icon icon--search"></span><span class="sr-only">Search</span></button>
+	<span class="search-toggle"><span class="icon icon--search"></span></span>
+</form>
+							<button id="nav--site__menu-toggle" class="menu-toggle nav--site__menu-toggle button--icon">Menu</button>
+						</div>
+
+					</div>
+					<div id="nav--site__mask" class="nav--site__mask nav--site__closer"></div>
+
+					<nav id="nav--site" class="nav--site">
+						<button class="nav--site__closer nav--site__menu-close button--icon">Close Menu</button>
+
+						<ul id="menu-primary-navigation" class="menu menu--site"><li id="menu-item-55313" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-55313 doubletap"><a href="https://www.shutterstock.com/blog/editor">Editor</a>
+<div class="sub-menu-wrap"><ul class="sub-menu inner">
+	<li id="menu-item-55319" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-55319"><a href="https://www.shutterstock.com/blog/editor/layout">Layout</a></li>
+	<li id="menu-item-55316" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-55316"><a href="https://www.shutterstock.com/blog/editor/flyers">Flyers</a></li>
+</ul></div>
+</li>
+<li id="menu-item-55306" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-55306 doubletap"><a href="https://www.shutterstock.com/blog/design">Design</a>
+<div class="sub-menu-wrap"><ul class="sub-menu inner">
+	<li id="menu-item-55312" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-55312"><a href="https://www.shutterstock.com/blog/design/trends">Design Trends</a></li>
+	<li id="menu-item-55311" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-55311"><a href="https://www.shutterstock.com/blog/design/resources">Design Resources</a></li>
+	<li id="menu-item-55308" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-55308"><a href="https://www.shutterstock.com/blog/design/design-inspiration">Design Inspiration</a></li>
+	<li id="menu-item-55307" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-55307"><a href="https://www.shutterstock.com/blog/design/elements-principles">Design Elements &amp; Principles</a></li>
+</ul></div>
+</li>
+<li id="menu-item-55298" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-55298 doubletap"><a href="https://www.shutterstock.com/blog/business">Business</a>
+<div class="sub-menu-wrap"><ul class="sub-menu inner">
+	<li id="menu-item-55303" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-55303"><a href="https://www.shutterstock.com/blog/business/small-business">SMB</a></li>
+	<li id="menu-item-55302" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-55302"><a href="https://www.shutterstock.com/blog/business/marketing">Marketing</a></li>
+	<li id="menu-item-55299" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-55299"><a href="https://www.shutterstock.com/blog/business/business-essentials">Business Essentials</a></li>
+	<li id="menu-item-55301" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-55301"><a href="https://www.shutterstock.com/blog/business/events-promotions">Events &amp; Promotions</a></li>
+</ul></div>
+</li>
+<li id="menu-item-55304" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-55304 sstk-current-post-ancestor doubletap"><a href="https://www.shutterstock.com/blog/contributors">Contributor</a>
+<div class="sub-menu-wrap"><ul class="sub-menu inner">
+	<li id="menu-item-55305" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-55305"><a href="https://www.shutterstock.com/blog/contributors/contributor-support">Contributor Support</a></li>
+</ul></div>
+</li>
+<li id="menu-item-55338" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-55338 doubletap"><a href="https://www.shutterstock.com/blog/video-production">Video Production</a>
+<div class="sub-menu-wrap"><ul class="sub-menu inner">
+	<li id="menu-item-55339" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-55339"><a href="https://www.shutterstock.com/blog/video-production/video">Video</a></li>
+	<li id="menu-item-55351" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-55351"><a href="https://www.shutterstock.com/blog/video-production/music">Music</a></li>
+</ul></div>
+</li>
+<li id="menu-item-55558" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-55558"><a href="https://www.shutterstock.com/blog/editorial">Editorial</a></li>
+<li id="menu-item-55325" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-55325"><a href="https://www.shutterstock.com/blog/news">News</a></li>
+<li id="menu-item-60752" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-60752"><a href="https://www.shutterstock.com/blog/free-downloads">Free Downloads</a></li>
+<li id="menu-item-78885" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-78885"><a href="https://www.shutterstock.com/blog/platform-solutions">Platform Solutions</a></li>
+</ul>
+						<div class="nav--site__secondary">
+							<ul id="menu-follow" class="menu menu--follow menu--follow--header"><li id="menu-item-22130" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22130"><a href="https://www.facebook.com/Shutterstock" target="_blank">Facebook</a></li>
+<li id="menu-item-22131" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22131"><a href="https://twitter.com/shutterstock" target="_blank">Twitter</a></li>
+<li id="menu-item-22132" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22132"><a href="https://plus.google.com/+shutterstock/" target="_blank">Google+</a></li>
+<li id="menu-item-48041" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48041"><a href="https://www.instagram.com/shutterstock/" target="_blank">Instagram</a></li>
+<li id="menu-item-22134" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22134"><a href="https://vimeo.com/shutterstock" target="_blank">Vimeo</a></li>
+</ul>
+							<ul id="menu-visit-shutterstock-1" class="menu menu--visit menu--visit--mobile"><li class="menu-item--offset menu-item menu-item-type-custom menu-item-object-custom menu-item-59558"><a href="https://www.offset.com/?utm_source=shutterstock.com&amp;utm_medium=referral&amp;utm_content=exploreoffset&amp;utm_campaign=lo_hdr" target="_blank">Discover Offset.com</a></li>
+<li class="menu-item--subscribe menu-item menu-item-type-custom menu-item-object-custom menu-item-59559"><a href="https://www.shutterstock.com/subscribe">See Plans &amp; Pricing</a></li>
+</ul>
+						</div>
+					</nav>				</div>			</div>
+		</header>
+		<div class="doc site-main">
+
+					<main class="doc__main doc__main--singular doc__main--single">
+
+				<article id="post-100162" class="post-single post-100162 post type-post status-publish format-standard has-post-thumbnail hentry category-contributors category-creative-tips category-inspiration category-tips-and-tutorials promotion_status-featured" data-slug="diy-photography-hacks" data-category="contributors">
+					<header class="doc__header">
+						<div class="banner banner--hero banner--dark">
+
+							<div class="banner__img banner__img--1 banner__img--thumbnail" style="background-image: url(https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2019/05/f2-7-1.jpg?w=368&amp;h=368&amp;crop=1);"></div>
+<div class="banner__img banner__img--2 banner__img--featured-lg" style="background-image: url(https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2019/05/f2-7-1.jpg?w=768&amp;h=512&amp;crop=1);"></div>
+<div class="banner__img banner__img--3 banner__img--x-large" style="background-image: url(https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2019/05/f2-7-1.jpg?w=1024);"></div>
+<div class="banner__img banner__img--4 banner__img--featured-xl" style="background-image: url(https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2019/05/f2-7-1.jpg?w=1440&amp;h=960&amp;crop=1);"></div>
+
+							<div class="banner__body">
+								<div class="banner__content">
+									<div class="inner banner__inner">
+											<div class="entry__meta banner__meta banner__content-flag"><span class="meta meta--flag"><a href="https://www.shutterstock.com/blog/contributors">Contributor</a></span>
+</div>
+										<h1 class="entry-title entry__title banner__title doc__title">Photographers Share DIY Photography Hacks You Need to Know</h1>
+											<div class="entry__meta banner__meta"><span class="meta meta--author"><span class="meta__title">By </span><span class="byline author vcard"><a href="https://www.shutterstock.com/blog/author/feature-shoot" title="Posts by Feature Shoot" class="author url fn" rel="author">Feature Shoot</a></span></span> | <span class="meta meta--published">May 23, 2019</span></div>
+									</div>								</div>							</div>
+						</div>					</header>
+
+					<div class="inner doc__content doc__content--single">
+
+						<div class="doc__layout">
+
+							<div class="content-column">
+								<div class="entry-content entry-content--single">
+
+									<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul class="sd-share"><li class="share-facebook"><a rel="nofollow noopener noreferrer" data-shared="sharing-facebook-100162" class="share-facebook sd-button share-icon" href="https://www.shutterstock.com/blog/diy-photography-hacks?share=facebook&amp;nb=1" target="_blank" title="Click to share on Facebook"><span>Facebook</span></a></li><li class="share-twitter"><a rel="nofollow noopener noreferrer" data-shared="sharing-twitter-100162" class="share-twitter sd-button share-icon" href="https://www.shutterstock.com/blog/diy-photography-hacks?share=twitter&amp;nb=1" target="_blank" title="Click to share on Twitter"><span>Twitter</span></a></li><li class="share-linkedin"><a rel="nofollow noopener noreferrer" data-shared="sharing-linkedin-100162" class="share-linkedin sd-button share-icon" href="https://www.shutterstock.com/blog/diy-photography-hacks?share=linkedin&amp;nb=1" target="_blank" title="Click to share on LinkedIn"><span>LinkedIn</span></a></li><li class="share-pinterest"><a rel="nofollow noopener noreferrer" data-shared="sharing-pinterest-100162" class="share-pinterest sd-button share-icon" href="https://www.shutterstock.com/blog/diy-photography-hacks?share=pinterest&amp;nb=1" target="_blank" title="Click to share on Pinterest"><span>Pinterest</span></a></li></ul></div></div></div>
+
+									<h2>Want to know what really goes on behind-the-scenes at a successful shoot? Explore these simple but unusual hacks from pro photographers.</h2>
+<figure class="entry__figure entry__figure--size-full alignnone"><a href="https://www.shutterstock.com/image-photo/te-henga-bethells-beach-auckland-new-1322973848?%20src=S-v6zpILnjysA9AdFI8oFQ-1-1" target="_blank" rel="noopener noreferrer"><img class="alignnone wp-image-100173 size-full" title="Photographers Share DIY Photography Hacks You Need to Know — Tricks of the Trade" src="./pit_files/3-7.jpg" alt="Photographers Share DIY Photography Hacks You Need to Know — Tricks of the Trade" width="750" height="501"></a></figure>
+<p><em>Image by ​<a href="https://www.shutterstock.com/image-photo/te-henga-bethells-beach-auckland-new-1322973848?%20src=S-v6zpILnjysA9AdFI8oFQ-1-1" target="_blank" rel="noopener noreferrer">Anupam Hatui</a></em></p>
+<p>Sometimes, seeing how a photograph is made is just as exciting as the photo itself. As any photographer knows, getting “the shot” is about so much more than hitting the shutter button. It requires hours of backstage planning, plenty of trial and error, and often, some pretty wild and ingenious rigs.</p>
+<p>Thanks to the power of social media, we now have access to some of these behind-the-scenes tricks and secrets photographers have been using for ages, and boy, are they entertaining. The Instagram account ​<a href="https://www.instagram.com/shittyrigs/" target="_blank" rel="noopener noreferrer">Sh*ttyRigs​</a>, for example, currently has well over 115K followers and counting. They’re also educational. Little-known hacks are now accessible to everyone.</p>
+<p>We asked more than ten innovative and resourceful photographers to tell us about some of the inventions and discoveries they’ve made throughout their careers. From bokeh to macro, learn how they create dazzling effects for a fraction of the usual cost.</p>
+<h3>1. Use folders for a cheap and easy filter.</h3>
+<figure class="entry__figure entry__figure--size-full alignnone"><a href="https://www.shutterstock.com/es/image-photo/sleepy-princess-693600016?src=0ZH4eZy8XSxF%20FOnuo51SeA-1-39" target="_blank" rel="noopener noreferrer"><img class="alignnone wp-image-100172 size-full" title="Photographers Share DIY Photography Hacks You Need to Know — Cheap and Easy Filters" src="./pit_files/2-6.jpg" alt="Photographers Share DIY Photography Hacks You Need to Know — Cheap and Easy Filters" width="750" height="500"></a></figure>
+<p><em>Image by <a href="https://www.shutterstock.com/es/image-photo/sleepy-princess-693600016?src=0ZH4eZy8XSxF%20FOnuo51SeA-1-39" target="_blank" rel="noopener noreferrer">Katerina Klio</a></em></p>
+<p>“Sometimes in my shoots, I use LED panels, and I attach colored silicone folders (the kind you keep papers in) to them in order to tint the light,” ​<a href="https://www.shutterstock.com/g/Katerina+Klio?sort=popular" target="_blank" rel="noopener noreferrer">Katerina Klio</a>​ tells us. “Sometimes, it is hard to find professional heat-resistant color filters, so I use these folders as a simple way to color light.”</p>
+<h3>2. Incorporate prisms or mirrors for unique flares.</h3>
+<figure class="entry__figure entry__figure--size-full alignnone"><a href="https://www.shutterstock.com/es/image-photo/red-hair-freediver-girl-black-mermaid-1245088612?src=NWkV9xtwk5Z7HDeLBkb-Ew-1-3" target="_blank" rel="noopener noreferrer"><img class="alignnone wp-image-100171 size-full" title="Photographers Share DIY Photography Hacks You Need to Know — Prisms and Mirrors" src="./pit_files/1-7.jpg" alt="Photographers Share DIY Photography Hacks You Need to Know — Prisms and Mirrors" width="750" height="501"></a></figure>
+<p><em>Image by <a href="https://www.shutterstock.com/es/image-photo/red-hair-freediver-girl-black-mermaid-1245088612?src=NWkV9xtwk5Z7HDeLBkb-Ew-1-3" target="_blank" rel="noopener noreferrer">Toporkova</a></em></p>
+<p>Shutterstock Contributor ​<a href="https://www.shutterstock.com/g/Annatoporkova?sort=popular" target="_blank" rel="noopener noreferrer">Toporkova</a>​ recommends employing glass prisms for highlights, flares, and reflections, while ​others​ use simple household mirrors. “I like to use several small mirrors during filming,” the cinematographer ​<a href="https://www.shutterstock.com/video/search?contributor=bitt24" target="_blank" rel="noopener noreferrer">Tatjana Baibakova</a>​ tells us. “I position them in different places and angles to form flares and bright spots that increase volume and depth.”</p>
+<figure class="entry__figure entry__figure--size-full alignnone"><a href="https://www.shutterstock.com/es/image-photo/woman-practicing-yoga-meditation-urban-background-639057952?src=IsfSDJjtYQtVMRcxpsWwvA-1-24" target="_blank" rel="noopener noreferrer"><img class="alignnone wp-image-100174 size-full" title="Photographers Share DIY Photography Hacks You Need to Know — Flares for Depth" src="./pit_files/4-6.jpg" alt="Photographers Share DIY Photography Hacks You Need to Know — Flares for Depth" width="750" height="1124"></a></figure>
+<p><em>Image by <a href="https://www.shutterstock.com/es/image-photo/woman-practicing-yoga-meditation-urban-background-639057952?src=IsfSDJjtYQtVMRcxpsWwvA-1-24" target="_blank" rel="noopener noreferrer">Luna Vandoorne</a></em></p>
+<p>If you’re feeling creative, you can even use ​cellophane​ for some unexpected effects.​“Once I used colored cellophane papers in front of the lens to add some texture and flares/leaks,” ​<a href="https://www.shutterstock.com/es/g/lunavandoorne" target="_blank" rel="noopener noreferrer">Luna Vandoorne​</a> says. “Natural light was coming from the left, which created that bokeh effect.”</p>
+<h3>3. Keep a toothbrush on hand.</h3>
+<figure class="entry__figure entry__figure--size-full alignnone"><a href="https://www.shutterstock.com/es/image-photo/young-beautiful-caucasian-woman-posing-traditional-1032930841?src=nyjGO01fc2JzufYGQP1bPg-1-9" target="_blank" rel="noopener noreferrer"><img class="alignnone wp-image-100175 size-full" title="Photographers Share DIY Photography Hacks You Need to Know — Use a Toothbrush" src="./pit_files/5-8.jpg" alt="Photographers Share DIY Photography Hacks You Need to Know — Use a Toothbrush" width="750" height="500"></a></figure>
+<p><em>Image by <a href="https://www.shutterstock.com/es/image-photo/young-beautiful-caucasian-woman-posing-traditional-1032930841?src=nyjGO01fc2JzufYGQP1bPg-1-9" target="_blank" rel="noopener noreferrer">Kertu Saarits</a></em></p>
+<p><a href="https://www.shutterstock.com/g/kertu_com" target="_blank" rel="noopener noreferrer">Kertu Saarits</a>​, a photographer and Shutterstock contributor based in the United Arab Emirates, knows a thing or two about navigating difficult conditions. “Living and traveling in the desert does no favors for my equipment, so the best I can do is to clean any sand and dust from my gear promptly,” she explains. “Toothbrushes are a small, affordable, and easy tool I use to quickly brush the tight nooks and crannies clean, even when I’m in the field.”</p>
+<h3>4. For jaw-dropping compositions, use skewers.</h3>
+<figure class="entry__figure entry__figure--size-full alignnone"><a href="https://www.offset.com/photos/still-life-of-flower-growing-out-of-fruit-689389" target="_blank" rel="noopener noreferrer"><img class="alignnone wp-image-100178 size-full" title="Photographers Share DIY Photography Hacks You Need to Know — Skewers" src="./pit_files/8-6.jpg" alt="Photographers Share DIY Photography Hacks You Need to Know — Skewers" width="750" height="937"></a></figure>
+<p><em>Image by <a href="https://www.offset.com/photos/still-life-of-flower-growing-out-of-fruit-689389" target="_blank" rel="noopener noreferrer">Yuya Parker</a></em></p>
+<p>“Wooden skewers are great for making ‘flying’ objects,” the photographer <a href="https://www.offset.com/artist/Yuya+Parker" target="_blank" rel="noopener noreferrer">​Yuya Parker</a>​ tells us. “You can buy them at any grocery store. They make it easy to capture different angles and positions, and they’re easy to remove in post.”</p>
+<h3>5. Save money by making your own creative backgrounds.</h3>
+<figure class="entry__figure entry__figure--size-full alignnone"><a href="https://www.offset.com/photos/grapes-in-dark-moody-set-782813" target="_blank" rel="noopener noreferrer"><img class="alignnone wp-image-100177 size-full" title="Photographers Share DIY Photography Hacks You Need to Know — Personalized Backgrounds" src="./pit_files/7-6.jpg" alt="Photographers Share DIY Photography Hacks You Need to Know — Personalized Backgrounds" width="750" height="1125"></a></figure>
+<p><em>Image by <a href="https://www.offset.com/photos/grapes-in-dark-moody-set-782813" target="_blank" rel="noopener noreferrer">Roberta Dall’Alba</a></em></p>
+<p>“I usually make my own backdrops,” Offset Artist ​<a href="https://www.offset.com/artist/Roberta+Dall&#39;Alba" target="_blank" rel="noopener noreferrer">Roberta Dall’Alba​</a> explains. “They’re cheap and easy: you’ll need a plywood board, a brush and matte colors. You’ll save so much money, and you will be able to choose your favorite color combinations.” You learn more about her process over by watching <a href="https://www.instagram.com/tv/Bl-PTVthVk3/" target="_blank" rel="noopener noreferrer">​this video</a>​ and checking out her <a href="https://www.instagram.com/healthylittlecravings/" target="_blank" rel="noopener noreferrer">​Instagram</a>​, ​<a href="http://healthylittlecravings.com/en" target="_blank" rel="noopener noreferrer">blog</a>​, and ​<a href="https://www.robertadallalba.com/" target="_blank" rel="noopener noreferrer">website​</a>.</p>
+<p><a href="https://www.offset.com/artist/Darius+Sulcius" target="_blank" rel="noopener noreferrer">Darius Šulčius</a>​ also makes his own backdrops using different materials and techniques. “​I think DIY really boosts your creativity,” he tells us. ​“​I’ve made photography backgrounds with aged wood logs, painted foam boards, etc.”</p>
+<h3>6. For soft photos, try vintage lenses.</h3>
+<figure class="entry__figure entry__figure--size-full alignnone"><a href="https://www.shutterstock.com/image-photo/copper-photo-camera-style-steampunk-157638395?src=aKDwZRBLs53N-2Jkq2V25w-1-7" target="_blank" rel="noopener noreferrer"><img class="alignnone wp-image-100176 size-full" title="Photographers Share DIY Photography Hacks You Need to Know — Vintage Lenses" src="./pit_files/6-6.jpg" alt="Photographers Share DIY Photography Hacks You Need to Know — Vintage Lenses" width="750" height="705"></a></figure>
+<p><em>Image by <a href="https://www.shutterstock.com/image-photo/copper-photo-camera-style-steampunk-157638395?src=aKDwZRBLs53N-2Jkq2V25w-1-7" target="_blank" rel="noopener noreferrer">3355m</a></em></p>
+<p>“I like to use vintage lenses in my work—old Zeiss, Takumar or Zenit lenses released thirty or forty years ago,” Toporkova tells us. “Sometimes, it’s hard to focus on an object using these lenses, but if you get to know them well, you will have soft and artistic pictures.” With a lens mount adaptor, you can put an older lens on a newer camera, combining the best of both worlds.</p>
+<p><em>Hint: you can also create a soft effect by using petroleum jelly. Simply take some plastic wrap, fix it to your lens hood with a rubber band, and apply some jelly, making sure to avoid contact with the lens itself.</em></p>
+<h3>7. Reverse your lens for macro photos.</h3>
+<figure class="entry__figure entry__figure--size-full alignnone"><a href="https://www.shutterstock.com/image-photo/beautiful-closeup-saitis-barbipes-jumping-spider-1348632341?src=uNSQuFvY9EvdvDFsouSpjw-1-7" target="_blank" rel="noopener noreferrer"><img class="alignnone wp-image-100181 size-full" title="Photographers Share DIY Photography Hacks You Need to Know — Reversed Lenses" src="./pit_files/11-2.jpg" alt="Photographers Share DIY Photography Hacks You Need to Know — Reversed Lenses" width="750" height="600"></a></figure>
+<p><em>Image by <a href="https://www.shutterstock.com/image-photo/beautiful-closeup-saitis-barbipes-jumping-spider-1348632341?src=uNSQuFvY9EvdvDFsouSpjw-1-7" target="_blank" rel="noopener noreferrer">Tomatito</a></em></p>
+<p>As multiple insect-loving photographers told us ​<a href="https://www.shutterstock.com/blog/macro-photos-surprising-tips" target="_blank" rel="noopener noreferrer">last year</a>​, you don’t have to shell out the cash for a macro lens. Instead, you can reverse your old 35mm or 50mm lens and attach it to some extension tubes using duct tape.</p>
+<h3>8. Experiment with diffusers.</h3>
+<figure class="entry__figure entry__figure--size-full alignnone"><a href="https://www.shutterstock.com/image-photo/bright-room-interior-curtains-white-window-603893885?src=gGjNyBcHzC4dj0HeuPgj8g-1-40" target="_blank" rel="noopener noreferrer"><img class="alignnone wp-image-100180 size-full" title="Photographers Share DIY Photography Hacks You Need to Know — Experiment with Diffusers" src="./pit_files/10-6.jpg" alt="Photographers Share DIY Photography Hacks You Need to Know — Experiment with Diffusers" width="750" height="501"></a></figure>
+<p><em>Image by <a href="https://www.shutterstock.com/image-photo/bright-room-interior-curtains-white-window-603893885?src=gGjNyBcHzC4dj0HeuPgj8g-1-40" target="_blank" rel="noopener noreferrer">Spaskov</a></em></p>
+<p>Need to get rid of those hard shadows? You probably have a cool diffusion fabric lying around the house, whether it’s a sheer, diaphanous scarf, a shower curtain, or even an umbrella. You can also try tissue paper and parchment paper. Try them all, and see what works best for you.</p>
+<h3>9. Use a fan for movement.</h3>
+<figure class="entry__figure entry__figure--size-full alignnone"><a href="https://www.offset.com/photos/girl-sitting-on-patio-table-in-sun-porch-576936" target="_blank" rel="noopener noreferrer"><img class="alignnone wp-image-100179 size-full" title="Photographers Share DIY Photography Hacks You Need to Know — Fans for Movement" src="./pit_files/9-6.jpg" alt="Photographers Share DIY Photography Hacks You Need to Know — Fans for Movement" width="750" height="500"></a></figure>
+<p><em>Image by ​<a href="https://www.offset.com/photos/girl-sitting-on-patio-table-in-sun-porch-576936" target="_blank" rel="noopener noreferrer">Emily Mitchell</a></em></p>
+<p>“A great way to get an aerial view with ever-so-slight motion in a video (or just a top shot photo) is by hanging your shoulder strap on the blade of a ceiling fan and using the remote,” ​<a href="https://www.offset.com/artist/Emily+Mitchell" target="_blank" rel="noopener noreferrer">Emily Mitchell​</a> explains. “I just hang it up there. Ceiling fan blades are straight and strong, and the camera strap has a rubbery side, so I just put that side toward the blade to keep it from sliding (not that it would, but you know, just in case).” She does not turn the fan on!</p>
+<h3>10. You can use a shoe box for all sorts of things.</h3>
+<figure class="entry__figure entry__figure--size-full alignnone"><a href="https://www.shutterstock.com/image-photo/beautiful-gray-cat-lying-shoe-box-1076130743?src=Xzq7eifUU5Hcx1aqbKC3rA-1-81" target="_blank" rel="noopener noreferrer"><img class="alignnone wp-image-100182 size-full" title="Photographers Share DIY Photography Hacks You Need to Know — Use Shoe Boxes" src="./pit_files/12-3.jpg" alt="Photographers Share DIY Photography Hacks You Need to Know — Use Shoe Boxes" width="750" height="500"></a></figure>
+<p><em>Image by <a href="https://www.shutterstock.com/image-photo/beautiful-gray-cat-lying-shoe-box-1076130743?src=Xzq7eifUU5Hcx1aqbKC3rA-1-81" target="_blank" rel="noopener noreferrer">Okssi</a></em></p>
+<p>“I decided to build a softbox and an external light source,” ​<a href="https://www.shutterstock.com/g/Anupam+hatui" target="_blank" rel="noopener noreferrer">Anupam Hatui​</a> tells us. “I used two cardboard shoe boxes of different sizes and painted their interiors white for good results. I customized a two-meter wire with a common holder and attached it in the middle of the boxes with CFLs and covered the open end with a thin white T-shirt. It worked fairly well for my indoor shots.”</p>
+<p><em>Top Image by <a href="https://www.shutterstock.com/es/image-photo/young-beautiful-caucasian-woman-posing-traditional-1032930841?src=nyjGO01fc2JzufYGQP1bPg-1-9" target="_blank" rel="noopener noreferrer">Kertu Saarits</a></em></p>
+<hr>
+<p>Looking for more pro tips? Check out these articles:</p>
+<ul>
+<li><a href="https://www.shutterstock.com/blog/model-release-every-shoot-complete" target="_blank" rel="noopener noreferrer">Why You Should Get a Model Release for Every Shoot You Complete</a></li>
+<li><a href="https://www.shutterstock.com/blog/5-tips-travel-photography-shoot" target="_blank" rel="noopener noreferrer">5 Things to Consider Before Your Next Photography Trip</a></li>
+<li><a href="https://www.shutterstock.com/blog/tips-better-food-videos" target="_blank" rel="noopener noreferrer">Explore 10 Pro Tips for Taking Better Videos of Food</a></li>
+<li><a href="https://www.shutterstock.com/blog/portrait-photography-anything-ordinary" target="_blank" rel="noopener noreferrer">Shooting Portrait Photography That’s Anything but Ordinary</a></li>
+<li><a href="https://www.shutterstock.com/blog/environmentally-conscious-images" target="_blank" rel="noopener noreferrer">Shooting Environmentally Conscious Images That Tell Stories</a></li>
+</ul>
+																	</div>
+								<aside id="post-70768" class="post-ctaad post-ctaad--large post-ctaad--left post-70768 type-post-ctaad status-publish has-post-thumbnail hentry category-contributors category-contributor-support">
+
+	<a href="https://customcontributor.shutterstock.com/how-it-works/?pl=blogcta-contributor&amp;cr=cta-cont&amp;utm_source=sstkblog&amp;utm_medium=cta&amp;utm_campaign=blog-cta&amp;utm_content=contributor-lohp" class="post-ctaad__link" target="_blank">
+
+	<div class="banner banner--dark banner--left">
+
+		<div class="banner__img banner__img--1 banner__img--thumbnail" style="background-image: url(https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2019/03/shutterstock-blog-videocta-004.jpg?w=368&amp;h=270&amp;crop=1);"></div>
+<div class="banner__img banner__img--2 banner__img--featured-lg" style="background-image: url(https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2019/03/shutterstock-blog-videocta-004.jpg?w=768&amp;h=270&amp;crop=1);"></div>
+<div class="banner__img banner__img--3 banner__img--x-large" style="background-image: url(https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2019/03/shutterstock-blog-videocta-004.jpg?w=1024);"></div>
+
+		<div class="banner__body banner__body--main">
+
+			<div class="banner__content">
+
+				<header class="entry-header banner__header">
+					<h2 class="entry-title entry__title banner__title">Become Our Custom Contributor</h2>
+				</header>
+
+									<div class="entry-content">
+						<p>Create custom content for world-class brands.<br>
+Join our community of talented artists.</p>
+					</div>				
+				<div class="banner__action"><span class="button button--trans">Apply today</span></div>
+			</div>		</div>
+		
+	</div>
+	</a>
+
+</aside>
+								<footer class="doc__footer">
+									<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul class="sd-share"><li class="share-facebook"><a rel="nofollow noopener noreferrer" data-shared="sharing-facebook-100162" class="share-facebook sd-button share-icon" href="https://www.shutterstock.com/blog/diy-photography-hacks?share=facebook&amp;nb=1" target="_blank" title="Click to share on Facebook"><span>Facebook</span></a></li><li class="share-twitter"><a rel="nofollow noopener noreferrer" data-shared="sharing-twitter-100162" class="share-twitter sd-button share-icon" href="https://www.shutterstock.com/blog/diy-photography-hacks?share=twitter&amp;nb=1" target="_blank" title="Click to share on Twitter"><span>Twitter</span></a></li><li class="share-linkedin"><a rel="nofollow noopener noreferrer" data-shared="sharing-linkedin-100162" class="share-linkedin sd-button share-icon" href="https://www.shutterstock.com/blog/diy-photography-hacks?share=linkedin&amp;nb=1" target="_blank" title="Click to share on LinkedIn"><span>LinkedIn</span></a></li><li class="share-pinterest"><a rel="nofollow noopener noreferrer" data-shared="sharing-pinterest-100162" class="share-pinterest sd-button share-icon" href="https://www.shutterstock.com/blog/diy-photography-hacks?share=pinterest&amp;nb=1" target="_blank" title="Click to share on Pinterest"><span>Pinterest</span></a></li></ul></div></div></div>
+	<div class="entry__meta"><span class="meta meta--terms"><span class="meta__title">Tags: </span><a href="https://www.shutterstock.com/blog/contributors" rel="tag">Contributor</a><a href="https://www.shutterstock.com/blog/tips-and-tutorials/creative-tips" rel="tag">Creative Tips</a><a href="https://www.shutterstock.com/blog/inspiration" rel="tag">Inspiration</a><a href="https://www.shutterstock.com/blog/tips-and-tutorials" rel="tag">Tips &amp; Tutorials</a></span></div>
+									<aside class="widget widget--author-bio author-bio">
+										<figure class="author-bio__figure"><a href="https://www.shutterstock.com/blog/author/feature-shoot"><img width="180" height="180" src="./pit_files/Feature-Shoot-Logo-Final-9-13-01.jpg" class="avatar avatar-180 photo wp-post-image" alt=""></a></figure>										<div class="widget__content widget--author-bio__content">
+										<h2 class="widget__title author-bio__title"><span class="author-bio__intro">About the Author </span><a href="https://www.shutterstock.com/blog/author/feature-shoot">Feature Shoot</a></h2>
+
+																					<div class="description author-bio__description">
+												Feature Shoot showcases the work of international emerging and established photographers who are transforming the medium through compelling, cutting-edge projects, with contributing writers from all over the world. 											</div>										
+											<div class="entry__meta"><div class="meta meta--author-website"><span class="meta__title">Website: </span><a href="https://www.featureshoot.com/" target="_blank">https://www.featureshoot.com/</a></div></div>
+										</div>									</aside>
+								</footer>
+							</div>						</div>
+							<section class="section section--related-posts section--jp-related_posts">
+		<h2 class="section__title">Related Posts</h2>
+		<div class="cards">
+			<article id="post-98357" class="card post-98357 post type-post status-publish format-standard has-post-thumbnail hentry category-contributors category-creative-tips category-inspiration category-tips-and-tutorials promotion_status-featured">
+
+		<div class="entry__meta card__content-flag"><span class="meta meta--flag"><a href="https://www.shutterstock.com/blog/contributors">Contributor</a></span>
+</div>
+
+  <figure class="card__image">
+  	<div class="banner__img banner__img--1 banner__img--featured" style="background-image: url(https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2019/04/featured2.jpg?w=330&amp;h=220&amp;crop=1);"></div>
+    <a href="https://www.shutterstock.com/blog/secret-tools-amazing-photos-food" class="card__image-link">&nbsp;</a>
+  </figure>
+
+	<header class="entry__header card__header">
+		<h2 class="entry-title entry__title card__title"><a href="https://www.shutterstock.com/blog/secret-tools-amazing-photos-food">Secret Tools for Shooting Amazing Photos of Food</a></h2>
+	</header>
+
+</article><article id="post-96646" class="card post-96646 post type-post status-publish format-standard has-post-thumbnail hentry category-contributors category-creative-tips category-tips-and-tutorials promotion_status-featured">
+
+		<div class="entry__meta card__content-flag"><span class="meta meta--flag"><a href="https://www.shutterstock.com/blog/contributors">Contributor</a></span>
+</div>
+
+  <figure class="card__image">
+  	<div class="banner__img banner__img--1 banner__img--featured" style="background-image: url(https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2019/03/shutterstock_1125735623-e1553488580264.jpg?w=330&amp;h=220&amp;crop=1);"></div>
+    <a href="https://www.shutterstock.com/blog/tips-pro-authentic-stock-images" class="card__image-link">&nbsp;</a>
+  </figure>
+
+	<header class="entry__header card__header">
+		<h2 class="entry-title entry__title card__title"><a href="https://www.shutterstock.com/blog/tips-pro-authentic-stock-images">Tips from a Pro: Capturing Authentic Stock Images That Sell</a></h2>
+	</header>
+
+</article><article id="post-44725" class="card post-44725 post type-post status-publish format-standard has-post-thumbnail hentry category-contributors promotion_status-featured">
+
+		<div class="entry__meta card__content-flag"><span class="meta meta--flag"><a href="https://www.shutterstock.com/blog/contributors">Contributor</a></span>
+</div>
+
+  <figure class="card__image">
+  	<div class="banner__img banner__img--1 banner__img--featured" style="background-image: url(https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2017/03/featuredyoutubephoto.jpg?w=330&amp;h=220&amp;crop=1);"></div>
+    <a href="https://www.shutterstock.com/blog/best-photography-youtube-channels" class="card__image-link">&nbsp;</a>
+  </figure>
+
+	<header class="entry__header card__header">
+		<h2 class="entry-title entry__title card__title"><a href="https://www.shutterstock.com/blog/best-photography-youtube-channels">21 Essential Photography YouTube Channels to Follow</a></h2>
+	</header>
+
+</article>		</div>	</section>
+
+					</div>
+				</article>
+			</main>
+		
+		</div>
+	  <footer class="site-footer content-info">
+	    <div class="inner">
+	      <div class="footer-blocks">
+
+	        <div class="footer-block">
+
+	          <div class="subnav subnav--shutter">
+	            <h5 class="subnav-title">Shutterstock.com</h5>
+	            <ul id="menu-footer-shutterstock" class="menu menu--footer"><li id="menu-item-21254" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21254"><a href="https://submit.shutterstock.com/" target="_blank">Sell content</a></li>
+<li id="menu-item-21244" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21244"><a href="https://www.shutterstock.com/subscribe">Subscribe / Renew</a></li>
+<li id="menu-item-21243" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21243"><a href="https://www.shutterstock.com/about">About us</a></li>
+<li id="menu-item-21247" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21247"><a href="https://www.shutterstock.com/">Home</a></li>
+<li id="menu-item-93151" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-93151"><a href="https://www.shutterstock.com/explore/royalty-free-images">Royalty-free images</a></li>
+<li id="menu-item-93152" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-93152"><a href="https://www.shutterstock.com/photos">Stock photos</a></li>
+<li id="menu-item-96232" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-96232"><a href="https://www.shutterstock.com/vectors">Vector images</a></li>
+<li id="menu-item-96233" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-96233"><a href="https://www.shutterstock.com/editorial">Editorial photos</a></li>
+<li id="menu-item-21245" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21245"><a href="https://www.shutterstock.com/video">Shutterstock footage</a></li>
+<li id="menu-item-21246" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21246"><a href="https://www.shutterstock.com/music/">Shutterstock music</a></li>
+<li id="menu-item-96231" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-96231"><a href="https://www.shutterstock.com/colors">Colors schemes</a></li>
+<li id="menu-item-96229" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-96229"><a href="https://www.shutterstock.com/image-resizer">Image resizer</a></li>
+<li id="menu-item-95743" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-95743"><a href="https://www.shutterstock.com/editor">Free photo editor</a></li>
+<li id="menu-item-96230" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-96230"><a href="https://www.shutterstock.com/file-converter">Free file converter</a></li>
+<li id="menu-item-93191" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-93191"><a href="https://www.shutterstock.com/explore/collage-maker">Free collage maker</a></li>
+<li id="menu-item-21256" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21256"><a href="https://developers.shutterstock.com/" target="_blank">Stock photo API</a></li>
+<li id="menu-item-21257" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21257"><a href="https://itunes.apple.com/us/app/shutterstock/id473347409?mt=8" target="_blank">Shutterstock for iOS</a></li>
+<li id="menu-item-57541" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-57541"><a href="https://play.google.com/store/apps/details?id=com.shutterstock.consumer&amp;hl=en" target="_blank">Shutterstock for Android</a></li>
+<li id="menu-item-21258" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21258"><a href="https://www.shutterstock.com/coupons">Shutterstock coupons</a></li>
+<li id="menu-item-21259" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21259"><a href="http://investor.shutterstock.com/" target="_blank">Investor relations</a></li>
+<li id="menu-item-50898" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50898"><a href="https://www.shutterstock.com/press">Press / Media</a></li>
+</ul>	          </div>
+	        </div>
+	        <div class="footer-block">
+
+	          <div class="subnav subnav--help">
+	            <h5 class="subnav-title">Help</h5>
+	            <ul id="menu-footer-help" class="menu menu--footer"><li id="menu-item-21240" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21240"><a href="https://www.shutterstock.com/support">Support Center</a></li>
+<li id="menu-item-21241" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21241"><a href="https://www.shutterstock.com/contactus">Contact Us</a></li>
+</ul>	          </div>
+	          <div class="subnav subnav--sales">
+	            <h5 class="subnav-title">Sales</h5>
+	            <ul id="menu-footer-sales" class="menu menu--footer"><li id="menu-item-21238" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21238"><a href="tel:1-866-663-3954">1-866-663-3954</a></li>
+<li id="menu-item-21239" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21239"><a href="tel:1-646-419-4452">1-646-419-4452 (US)</a></li>
+</ul>	          </div>
+	          <div class="subnav subnav--follow">
+	            <h5 class="subnav-title">Follow Us</h5>
+	      			<ul id="menu-follow-1" class="menu menu--follow menu--follow--footer"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22130"><a href="https://www.facebook.com/Shutterstock" target="_blank">Facebook</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22131"><a href="https://twitter.com/shutterstock" target="_blank">Twitter</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22132"><a href="https://plus.google.com/+shutterstock/" target="_blank">Google+</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48041"><a href="https://www.instagram.com/shutterstock/" target="_blank">Instagram</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22134"><a href="https://vimeo.com/shutterstock" target="_blank">Vimeo</a></li>
+</ul>	          </div>
+	        </div>
+	        <div class="footer-block">
+
+	          <div class="subnav subnav--lang">
+	            <h5 class="subnav-title">Select a Language</h5>
+	            <ul class="menu menu--footer">
+<li class="menu-item menu-item-blog-3"><a href="https://www.shutterstock.com/de/blog/">Deutsch</a></li>
+<li class="menu-item menu-item-blog-5 current-menu-item"><a href="https://www.shutterstock.com/blog/">English</a></li>
+<li class="menu-item menu-item-blog-2"><a href="https://www.shutterstock.com/fr/blog/">Français</a></li>
+<li class="menu-item menu-item-blog-4"><a href="https://www.shutterstock.com/pt/blog/">Português</a></li>
+<li class="menu-item menu-item-blog-16"><a href="https://www.shutterstock.com/th/blog/">ไทย</a></li>
+<li class="menu-item menu-item-blog-17"><a href="https://www.shutterstock.com/ko/blog/">한국어</a></li>
+<li class="menu-item menu-item-blog-6"><a href="https://www.shutterstock.com/ja/blog/">日本語</a></li>
+<li class="menu-item menu-item-blog-11"><a href="https://www.shutterstock.com/zh-Hant/blog/">繁體中文</a></li>
+</ul>
+	            <p class="lang-map"></p>
+	          </div>
+	        </div>
+	        <div class="footer-block">
+
+	          <div class="subnav subnav--legal">
+	            <h5 class="subnav-title">Legal</h5>
+				<ul id="menu-footer-legal" class="menu menu--footer"><li id="menu-item-21260" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21260"><a href="https://www.shutterstock.com/terms">Terms of Use</a></li>
+<li id="menu-item-21262" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21262"><a href="https://www.shutterstock.com/privacy">Privacy Policy</a></li>
+<li id="menu-item-21261" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21261"><a href="https://www.shutterstock.com/license">License Agreement</a></li>
+</ul>	          </div>
+	        </div>
+	      </div>
+	      <div class="footer-meta footer-meta--shutterstock">
+	        © 2013-2019 Shutterstock Inc. All rights reserved.	      </div>
+	    </div>
+	  </footer>
+	</div>
+	
+<!-- This site is converting visitors into subscribers and customers with OptinMonster - https://optinmonster.com-->
+<script type="text/javascript" src="./pit_files/api.min.js" data-account="5498" data-user="22844" async="">
+</script>
+<!-- / OptinMonster -->
+
+	<script type="text/javascript">
+		window.WPCOM_sharing_counts = {"https:\/\/www.shutterstock.com\/blog\/diy-photography-hacks":100162};
+	</script>
+						<script type="text/javascript" src="./pit_files/devicepx-jetpack.js"></script>
+<script type="text/javascript" src="./pit_files/theme.min.js"></script>
+<script type="text/javascript" src="./pit_files/comment-reply.min.js"></script>
+<script type="text/javascript" src="./pit_files/wp-embed.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var sharing_js_options = {"lang":"en","counts":"1","is_stats_active":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./pit_files/sharing.min.js"></script>
+<script type="text/javascript">
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-facebook', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-twitter', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-linkedin', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomlinkedin', 'menubar=1,resizable=1,width=580,height=450' );
+				return false;
+			});
+</script>
+<script type="text/javascript" src="./pit_files/e-201922.js" async="async" defer="defer"></script>
+<script type="text/javascript">
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:7.3',blog:'89028679',post:'100162',tz:'-4',srv:'vip-go.shutterstock.com'} ]);
+	_stq.push([ 'clickTrackerInit', '89028679', '100162' ]);
+</script>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"f3183ba577","applicationID":"119766145","transactionName":"bgZUY0BTDRdXUUdRDldMd1RGWwwKGUFaVgZVBg==","queueTime":0,"applicationTime":183,"atts":"QkFDFQhJHkgUUxECGkQe","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+<img src="./pit_files/g.gif" alt=":)" width="6" height="5" id="wpstats"><div id="om-s9rikuubwdul2ggkteqa-holder"></div><div id="om-xq5qktxf4sqgm4yvwdqz-holder"></div>
+
+<script type="text/javascript" id="">"undefined"===typeof fbq&&(!function(c,e,f,g,a,b,d){c.fbq||(a=c.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},c._fbq||(c._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],b=e.createElement(f),b.async=!0,b.defer=!0,b.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(b,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js"),fbq("init",google_tag_manager["GTM-PFWDHP"].macro(375)));</script>
+<script type="text/javascript" id="gtm-original-url">dataLayer.push({"util.setPageOriginalUrl":!0,page:{originalUrl:window.location.protocol+"//"+window.location.hostname+window.location.pathname+window.location.search}});</script><script type="text/javascript" id="" src="./pit_files/ytag.js"></script><script type="text/javascript" id="gtm-eloqua-page-tag">var _elqQ=_elqQ||[];_elqQ.push(["elqSetSiteId","608643449"]);_elqQ.push(["elqTrackPageView"]);(function(){var a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src="//img.en25.com/i/elqCfg.min.js";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})();</script>
+<script type="text/javascript" id="">var _user_id=google_tag_manager["GTM-PFWDHP"].macro(405),_session_id=google_tag_manager["GTM-PFWDHP"].macro(408),_sift=_sift||[];_sift.push(["_setAccount",google_tag_manager["GTM-PFWDHP"].macro(409)]);_sift.push(["_setUserId",_user_id]);_sift.push(["_setSessionId",_session_id]);_sift.push(["_trackPageview"]);(function(){var a=document.createElement("script");a.type="text/javascript";a.async=!0;a.defer=!0;a.src="//cdn.siftscience.com/s.js";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})();</script><script type="text/javascript" id="gtm-virtual-pageview-indicator">dataLayer.push({"util.preventDoubleFiringOnCombinedPageViewAndVPV":!0,page:{virtualPageViewFired:"true"}});</script>
+<script type="text/javascript" id="">fbq("track","PageView");</script>
+<script type="text/javascript" id="" src="./pit_files/saved_resource(1)"></script>
+<script type="text/javascript" id="">(function(){function b(){if(!window._contently){var a={siteId:"bfef95601890afd80709"};a.insights=new ContentlyInsights({site_id:a.siteId});window._contently=a}}var a=document.createElement("script");a.setAttribute("type","text/javascript");a.setAttribute("src","//s3.amazonaws.com/assets.contently.com/insights/insights.js");a.onreadystatechange=function(){"complete"!=this.readyState&&"loaded"!=this.readyState||b()};a.onload=b;document.body.appendChild(a)})();</script><script type="text/javascript" src="./pit_files/insights.js"></script><script type="text/javascript" id="">window._tfa=window._tfa||[];_tfa.push({notify:"action",name:"page_view"});</script>
+<script type="text/javascript" id="" src="./pit_files/tfa.js"></script><script type="text/javascript" id="" src="./pit_files/shutterstock-119874.min.js"></script><script src="./pit_files/saved_resource(2)" type="text/javascript"></script><iframe id="xdomain_cookie_1559229648623" src="./pit_files/xdomain_cookie.html" style="display: none;"></iframe>
+<script type="text/javascript" id="">window.yjDataLayer=window.yjDataLayer||[];function ytag(){yjDataLayer.push(arguments)}ytag({type:"ycl_cookie"});</script></body></html>

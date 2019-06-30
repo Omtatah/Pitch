@@ -1,33 +1,50 @@
-# FLASK_STRUCTURE
-this is a script to every lazy developer or any other that seeks to save time creating the whole flask structure
+## Pitch
 
-## SETUP
+## Author
 
-### clone this repository
+**Jacquline Wangu**
 
-``` $ git clone https://github.com/boydndonga/FLASK_STRUCTURE.git ```
+## Description
 
-### make sure you are at its required level
+A platform for sharing ideas in the neatest and most presentable way possible to the world and get constructive criticism on where to improve on, 2019.
 
-``` $ cd FLASK_STRUCTURE```
+## Setup/Installation Requirements
+### Prerequisites
+* Python3.6
+* Virtual
 
-### make it executable
+## Setup
+* Search for the repository name
+* Click on clone get the link and clone the repo via your terminal
+* install nvm for better versioning on local machine
+* install bootstrap designed for flask application development.
+* The app depends on git and git hub for a local and remote link.
+* Use of source code for malicious intent may be followed up with legal action and is independent of the source code.
 
-``` $ chmod +x flaskApp.sh ```
+## BDD
 
-**create a directory of your project and copy the flaskApp.sh file to that destination then execute it from there responding to the prompts to have your desired configuration**
+|  BEHAVIOUR                             | INPUT                                   |      OUTPUT                            |
+|----------------------------------------|-----------------------------------------|----------------------------------------|
+| Sign up                                | Enter users email and Signup            | Sign in successful                     |
+| Log in                                 | Enter an already signed in user         | Login successful                       |
+| Write ur own pitch                     | Submit text                             | pitch submitted                        |
+| Comment                                | Enter comment text                      | Comment submitted                      |
+| Update post                            | Write new pitch                         | Post the new pitch                     |
+| Delete post                            | Delete the text of pitch                | Pitch gets deleted                     |
 
-``` $ ./flaskApp.sh ```
+## Known Bugs
+* HTML and MDbootstrap for page structure
+* Flask and python for creation of base files
+* CSS for styling and visibility of page.
+* Postgresql database.
+* Heroku for hosting services
 
-| *Option* | *Output* 
---- | --- 
-Should i create a README? | creates a README.md file
-create with bootstrap only | initialize bootstrap for use in the app
-create with: bootstrap and db | initialize bootstrap and SQLAlchemy in your app
-create with: bootstrap,db,authentication | initialize bootstrap, SQLAlchemy and auth blueprnt in your app
+## Support and contact details
+In case of any bugs or questions please contact me:
 
-### Disclaimer
-In the start.sh file it has been set to run on python3.6, change this to your python version
-This script doesnt create a database for you ,it just installs the neccesary packages required to integrate a db seamlessly in the app
+* email jacqulinewangu@gmail.com
+* contacts 0707518860
 
-![Sample Structure](flaskStructure.png)
+## License
+
+MIT Copyright (c) {2019} Jacquline Wangu

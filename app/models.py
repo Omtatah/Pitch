@@ -1,25 +1,49 @@
-from app import db
-from app import login_manager
-from sqlalchemy import func
 from datetime import datetime
+from . import db
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import UserMixin
+from . import login_manager
+
+
+@login_manager.user_loader
+def load_user(user_id):
+    return User.query.get(int(user_id))
+
+
+class Comment(db.Model):
+    __tablename__ = 'comments'
+
+    id = db.Column(db.Integer, primary_key=True)
+    comment_content = db.Column(db.String())
+    pitch_id = db.Column(db.Integer)
+    user_id = db.Column(db.Integer, db.ForeignKey('users.id'))
+
+    def save_comment(self):
+        db.session.add(self)
+        db.session.commit()
+
+    @classmethod
+    def get_comments(cls, id):
+        comments = Comment.query.filter_by(pitch_id=id).all()
+        return comments
 
 
 class User(UserMixin, db.Model):
+
     __tablename__ = 'users'
 
     id = db.Column(db.Integer, primary_key=True)
-
-    username = db.Column(db.String(255))
+    username = db.Column(db.String(255), index=True)
     email = db.Column(db.String(255), unique=True, index=True)
+    bio = db.Column(db.String(255))
+    profile_pic_path = db.Column(db.String())
     password_hash = db.Column(db.String(255))
-    posts = db.relationship('Post', backref='user', lazy='dynamic')
-    comments = db.relationship('Comment', backref='user', lazy="dynamic")
 
+    pitches = db.relationship('Pitch', backref='user', lazy='dynamic')
+    comments = db.relationship('Comment', backref='user', lazy='dynamic')
     @property
     def password(self):
-        raise AttributeError('You cannot read the password attribute')
+        raise AttributeError('You cannot read the password attritube')
 
     @password.setter
     def password(self, password):
@@ -32,53 +56,30 @@ class User(UserMixin, db.Model):
         return f'User {self.username}'
 
 
-class Comment(db.Model):
-
-    __tablename__ = 'comments'
-
-    id = db.Column(db.Integer, primary_key=True)
-    user_id = db.Column(db.Integer, db.ForeignKey("users.id"))
-    post_id = db.Column(db.Integer, db.ForeignKey('posts.id'))
-    pitch_comment = db.Column(db.Text)
-    posted = db.Column(db.DateTime, default=datetime.utcnow)
-
-    def save_comment(self):
-        db.session.add(self)
-        db.session.commit()
-
-    @classmethod
-    def get_comment(post_id):
-        comment = Comment.query.filter_by(post_id=id)
-        return comment
-
-
-class Post(db.Model):
-    __tablename__ = 'posts'
+class Pitch(db.Model):
+    __tablename__ = 'pitches'
 
     id = db.Column(db.Integer, primary_key=True)
-    text = db.Column(db.Text())
+    pitch_content = db.Column(db.String())
+    pitch_category = db.Column(db.String(255))
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'))
-    category = db.Column(db.String(255))
-    posted_at = db.Column(db.DateTime, index=True, default=func.now())
-    comments = db.relationship('Comment', backref='post', lazy='dynamic')
 
     def save_pitch(self):
         db.session.add(self)
         db.session.commit()
 
-    def get_pitches(self):
-        pitches = Post.query.all()
+    @classmethod
+    def get_pitch(cls, id):
+        pitches = Pitch.query.filter_by(id=id).all()
         return pitches
 
-    def get_pitch(self):
-        pitch = Post.query.filter_by(id)
-        return pitch
+    @classmethod
+    def get_all_pitches(cls):
+        pitches = Pitch.query.order_by('id').all()
+        return pitches
 
-    def display_user(self):
-        if Post.user_id == User.id:
-            return User.username
-
-
-@login_manager.user_loader
-def load_user(username):
-    return User.query.get(int(username))
+    @classmethod
+    def get_category(cls, cat):
+        category = Pitch.query.filter_by(
+            pitch_category=cat).order_by('id').all()
+        return category

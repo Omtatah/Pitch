@@ -1,0 +1,7 @@
+Hello {{user.username}}
+
+Welcome to Pitch Application.
+This Application helps people to pitch their ideas in one minute.
+Thanks for signing up to keep in touch with Pitch App. We're happy you joined our community.
+Feel free to drop a pitch on the different categories available.
+Make sure to drop your pitches as often as possible and get feedback on them.
