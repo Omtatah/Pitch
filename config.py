@@ -1,10 +1,7 @@
 import os
 
 class Config:
-    '''
-    parent Config class
-    '''
-    SECRET_KEY = os.environ.get('SECRET_KEY')  
+    SECRET_KEY = os.environ.get('SECRET_KEY')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     UPLOADED_PHOTOS_DEST ='app/static/img'
     MAIL_SERVER = 'smtp.gmail.com'
@@ -20,6 +17,7 @@ class ProdConfig(Config):
     Args:
         Config:The parent configuration class with General configuration settings
     '''
+    # SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
     SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
 
 

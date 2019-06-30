@@ -3,12 +3,12 @@
 <div class="col-6 pitch_list">
     {% if pitch.user.profile_pic_path %}
     <p>
-        <img src="{{url_for('static',filename = pitch.user.profile_pic_path)}}" alt="" class="img-thumbnail">
+        <img src="{{url_for('static',filename = pitch.user.profile_pic_path)}}" alt="Profile pic" class="img-thumbnail">
         <h5>Username:<strong>{{pitch.user.username|capitalize}}</strong></h5>
     </p>
     {% else %}
     <p>
-        <img src="{{url_for('static',filename = 'photos/Avatar.png')}}" alt="" class="img-thumbnail">
+        <img src="{{url_for('static',filename = 'photos/Avatar.png')}}" alt="Avatar" class="img-thumbnail">
         <h5>Username: <strong>{{pitch.user.username|capitalize}}</strong></h5>
     </p>
     {% endif %}

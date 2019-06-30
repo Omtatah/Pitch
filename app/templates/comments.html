@@ -5,16 +5,15 @@
 
 <style>
     body {
-
         background-image: url("../static/img/tree.jpeg");
         background-repeat: no-repeat;
         background-size: cover;
+        /* background-color: #247CFD */
     }
 </style>
 
 <div class="container">
     <div class="row">
-    
         <div class="col-md-4" style="background-color: darkturquoise">
             <h4>Pitch Author: <strong><em>{{pitch.user.username|capitalize}}</em></strong></h4>
             <hr>
@@ -30,10 +29,6 @@
 
             {{macro.displayComments(comments)}}
         </div>
-
-
-
-
     </div>
 </div>
 {% endblock%}
