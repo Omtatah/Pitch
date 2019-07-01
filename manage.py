@@ -7,7 +7,7 @@ from app.models import User,Pitch,Comment
 #Create app instance
 # app = create_app('test')
 # app = create_app('production')
-app = create_app('production')
+app = create_app('development')
 
 manager = Manager(app)
 manager.add_command('server',Server)
