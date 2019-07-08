@@ -26,5 +26,5 @@ def make_shell_context():
     return dict(app=app,db=db,User=User,Pitch = Pitch, Comment = Comment)
 
 if __name__ == '__main__':
-    #manager.debug = True
+    app.secret_key = '12'
     manager.run()
